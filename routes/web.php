@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\F_Auth\AuthController;
+use App\Http\Controllers\Konfigurasi\MenuController;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware('guest')->group(function () {
@@ -15,7 +16,6 @@ Route::middleware(['auth'])->group(function () {
     })->name('dashboard');
 
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
-
-    // Route::get('/', [DashboardC::class, 'index'])->name('f_auth.index');
-
+    // Route::resource('konfigurasi/menu', MenuController::class);
+    Route::get('konfigurasi/menu', [MenuController::class, 'index'])->name('konfigurasi.menu.index');
 });
