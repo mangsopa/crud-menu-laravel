@@ -12,18 +12,20 @@ class MenuSeeder extends Seeder
         /**
          * @var Menu $mm
          */
-        $mm = Menu::create([
+        $mm = Menu::firstOrCreate([
             'name' => 'konfigurasi',
             'url' => 'konfigurasi',
             'category' => 'MASTER DATA',
             'active' => true,
             'icon' => 'fas fa-cogs',
         ]);
+        // $this->attachMenupermission($mm, ['read'], ['admin']);
 
         $mm->subMenus()->create([
             'name' => 'Menu',
             'url' => $mm->url . '/menu',
             'category' => $mm->category,
         ]);
+        // $this->attachMenupermission($mm, ['read'], ['admin']);
     }
 }

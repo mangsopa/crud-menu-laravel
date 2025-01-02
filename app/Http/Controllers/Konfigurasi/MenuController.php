@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers\Konfigurasi;
 
+use App\DataTables\Konfigurasi\MenuDataTable;
 use App\Http\Controllers\Controller;
 use App\Models\Konfigurasi\Menu;
 use Illuminate\Http\Request;
 
 class MenuController extends Controller
 {
-    public function index()
+    public function index(MenuDataTable $menuDataTable)
     {
-        return view('pages.konfigurasi.menu');
+        return $menuDataTable->render('pages.konfigurasi.menu');
     }
 
     public function create()
