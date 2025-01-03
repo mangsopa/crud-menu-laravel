@@ -21,11 +21,11 @@ class MenuSeeder extends Seeder
         ]);
         // $this->attachMenupermission($mm, ['read'], ['admin']);
 
-        $mm->subMenus()->create([
+        $sm = $mm->subMenus()->create([
             'name' => 'Menu',
             'url' => $mm->url . '/menu',
             'category' => $mm->category,
         ]);
-        // $this->attachMenupermission($mm, ['read'], ['admin']);
+        // $this->attachMenupermission($sm, ['read', 'create', 'update', 'delete'], ['admin']);
     }
 }

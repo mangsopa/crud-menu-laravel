@@ -1,11 +1,10 @@
 @extends('layouts.app')
 
-@section('title', 'Konfigurasi')
+@section('title', 'Konfigurasi Menu')
 
 @section('content')
     <div class="page-content">
         <div class="container-fluid">
-            <!-- start page title -->
             <div class="row">
                 <div class="col-lg-12">
                     <div class="card">
@@ -16,16 +15,12 @@
                             {!! $dataTable->table() !!}
                         </div>
                     </div>
-                    @push('js')
-                        {!! $dataTable->scripts() !!}
-                    @endpush
-                </div><!--end col-->
-            </div><!--end row-->
-            <!-- end page title -->
-
-
+                </div>
+            </div>
         </div>
-        <!-- container-fluid -->
     </div>
 
+    @push('scripts')
+        {{ $dataTable->scripts() }}
+    @endpush
 @endsection
