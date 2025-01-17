@@ -11,7 +11,8 @@ class MenuController extends Controller
 {
     public function index(MenuDataTable $menuDataTable)
     {
-        return $menuDataTable->render('pages.konfigurasi.menu');
+        $title = 'Konfigurasi Menu';
+        return $menuDataTable->render('pages.konfigurasi.menu', compact('title'));
         // $menus = Menu::all();
         // return view('pages.konfigurasi.menu', compact('menus'));
     }
