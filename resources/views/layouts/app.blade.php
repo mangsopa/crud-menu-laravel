@@ -107,6 +107,8 @@
                                 $('#modal_action').modal('hide');
                             }
 
+                            showToast(res.status, res.message);
+
                             _this.onSuccessCallback && _this.onSuccessCallback(res);
 
                             _this.dataTableId && window.LaravelDataTables[_this.dataTableId].ajax
@@ -127,6 +129,7 @@
                                         );
                                 }
                             }
+                            showToast('error', err.responseJSON?.message);
                         }
                     })
                 })

@@ -67,17 +67,10 @@ class MenuController extends Controller
         } catch (\Throwable $th) {
             DB::rollBack();
 
-            return response()->json([
-                'status' => 'error',
-                'message' => $th->getMessage(),
-            ]);
+            return responseError($th);
         }
 
-
-        return response()->json([
-            'status' => 'success',
-            'message' => 'Create data successfully',
-        ]);
+        return responseSuccess();
     }
 
     function show(Menu $menu)
@@ -113,10 +106,7 @@ class MenuController extends Controller
         //     'data' => $menu,
         //     'mainMenus' => $this->repository->getMainMenus(),
         // ]);
-        return response()->json([
-            'status' => 'success',
-            'message' => 'Update data successfully',
-        ]);
+        return responseSuccess(true);
     }
 
     function destroy(Menu $menu)
