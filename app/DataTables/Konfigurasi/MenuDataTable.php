@@ -21,8 +21,19 @@ class MenuDataTable extends DataTable
      */
     public function dataTable(QueryBuilder $query): EloquentDataTable
     {
+        $user = request()->user();
+
         return (new EloquentDataTable($query))
-            ->addColumn('action', 'menu.action')
+            ->addColumn(
+                'action',
+                function ($row) use ($user) {
+                    $actions = [];
+                    if ($user->can('update konfigurasi/menu')) {
+                        $actions['Edit'] = route('konfigurasi.menu.edit', $row->id);
+                    }
+                    return view('action', compact('actions'));
+                }
+            )
             ->setRowId('id');
     }
 
@@ -65,6 +76,7 @@ class MenuDataTable extends DataTable
             Column::make('name'),
             Column::make('url'),
             Column::make('category'),
+            Column::make('icon'),
             Column::computed('action')
                 ->exportable(false)
                 ->printable(false)

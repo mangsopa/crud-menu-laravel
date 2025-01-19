@@ -16,6 +16,8 @@ Route::middleware(['auth'])->group(function () {
     })->name('dashboard');
 
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
-    // Route::resource('konfigurasi/menu', MenuController::class);
-    Route::get('konfigurasi/menu', [MenuController::class, 'index'])->name('konfigurasi.menu.index');
+
+    Route::group(['prefix' => 'konfigurasi', 'as' => 'konfigurasi.'], function () {
+        Route::resource('menu', MenuController::class);
+    });
 });

@@ -6,19 +6,19 @@
                 <div class="navbar-brand-box horizontal-logo">
                     <a href="index.html" class="logo logo-dark">
                         <span class="logo-sm">
-                            <img src="assets/images/logo-sm.png" alt="" height="22">
+                            <img src="{{ asset('assets/images/logo-sm.png') }}" alt="" height="22">
                         </span>
                         <span class="logo-lg">
-                            <img src="assets/images/logo-dark.png" alt="" height="17">
+                            <img src="{{ asset('assets/images/logo-dark.png') }}" alt="" height="17">
                         </span>
                     </a>
 
                     <a href="index.html" class="logo logo-light">
                         <span class="logo-sm">
-                            <img src="assets/images/logo-sm.png" alt="" height="22">
+                            <img src="{{ asset('assets/images/logo-sm.png') }}" alt="" height="22">
                         </span>
                         <span class="logo-lg">
-                            <img src="assets/images/logo-light.png" alt="" height="17">
+                            <img src="{{ asset('assets/images/logo-light.png') }}" alt="" height="17">
                         </span>
                     </a>
                 </div>
@@ -40,31 +40,25 @@
                     <button type="button"
                         class="btn btn-icon btn-topbar material-shadow-none btn-ghost-secondary rounded-circle"
                         data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img id="header-lang-img" src="assets/images/flags/us.svg" alt="Header Language" height="20"
-                            class="rounded">
+                        <img id="header-lang-img" src="{{ asset('assets/images/flags/us.svg') }}" alt="Header Language"
+                            height="20" class="rounded">
                     </button>
                     <div class="dropdown-menu dropdown-menu-end">
 
                         <!-- Icon English-->
                         <a href="javascript:void(0);" class="dropdown-item notify-item language py-2" data-lang="en"
                             title="English">
-                            <img src="assets/images/flags/us.svg" alt="user-image" class="me-2 rounded" height="18">
+                            <img src="{{ asset('assets/images/flags/us.svg') }}" alt="user-image" class="me-2 rounded"
+                                height="18">
                             <span class="align-middle">English</span>
                         </a>
 
                         <!-- Icon Indonesia-->
                         <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="sp"
                             title="Spanish">
-                            <img src="assets/images/flags/indonesia.svg" alt="user-image" class="me-2 rounded"
-                                height="18">
+                            <img src="{{ asset('assets/images/flags/indonesia.svg') }}" alt="user-image"
+                                class="me-2 rounded" height="18">
                             <span class="align-middle">Indonesian</span>
-                        </a>
-
-                        <!-- Icon Korea-->
-                        <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="gr"
-                            title="German">
-                            <img src="assets/images/flags/korea.svg" alt="user-image" class="me-2 rounded"
-                                height="18"> <span class="align-middle">Korea</span>
                         </a>
                     </div>
                 </div>
@@ -116,12 +110,6 @@
                                             Messages
                                         </a>
                                     </li>
-                                    <li class="nav-item waves-effect waves-light">
-                                        <a class="nav-link" data-bs-toggle="tab" href="#alerts-tab" role="tab"
-                                            aria-selected="false">
-                                            Alerts
-                                        </a>
-                                    </li>
                                 </ul>
                             </div>
 
@@ -165,7 +153,7 @@
 
                                     <div class="text-reset notification-item d-block dropdown-item position-relative">
                                         <div class="d-flex">
-                                            <img src="assets/images/users/avatar-2.jpg"
+                                            <img src="{{ asset('assets/images/users/avatar-2.jpg') }}"
                                                 class="me-3 rounded-circle avatar-xs flex-shrink-0" alt="user-pic">
                                             <div class="flex-grow-1">
                                                 <a href="#!" class="stretched-link">
@@ -224,7 +212,7 @@
 
                                     <div class="text-reset notification-item d-block dropdown-item position-relative">
                                         <div class="d-flex">
-                                            <img src="assets/images/users/avatar-8.jpg"
+                                            <img src="{{ asset('assets/images/users/avatar-8.jpg') }}"
                                                 class="me-3 rounded-circle avatar-xs flex-shrink-0" alt="user-pic">
                                             <div class="flex-grow-1">
                                                 <a href="#!" class="stretched-link">
@@ -254,7 +242,6 @@
                                             All Notifications <i class="ri-arrow-right-line align-middle"></i></button>
                                     </div>
                                 </div>
-
                             </div>
 
                             <div class="tab-pane fade py-2 ps-2" id="messages-tab" role="tabpanel"
@@ -262,7 +249,7 @@
                                 <div data-simplebar style="max-height: 300px;" class="pe-2">
                                     <div class="text-reset notification-item d-block dropdown-item">
                                         <div class="d-flex">
-                                            <img src="assets/images/users/avatar-3.jpg"
+                                            <img src="{{ asset('assets/images/users/avatar-3.jpg') }}"
                                                 class="me-3 rounded-circle avatar-xs" alt="user-pic">
                                             <div class="flex-grow-1">
                                                 <a href="#!" class="stretched-link">
@@ -289,7 +276,7 @@
 
                                     <div class="text-reset notification-item d-block dropdown-item">
                                         <div class="d-flex">
-                                            <img src="assets/images/users/avatar-2.jpg"
+                                            <img src="{{ asset('assets/images/users/avatar-2.jpg') }}"
                                                 class="me-3 rounded-circle avatar-xs" alt="user-pic">
                                             <div class="flex-grow-1">
                                                 <a href="#!" class="stretched-link">
@@ -317,7 +304,7 @@
 
                                     <div class="text-reset notification-item d-block dropdown-item">
                                         <div class="d-flex">
-                                            <img src="assets/images/users/avatar-6.jpg"
+                                            <img src="{{ asset('assets/images/users/avatar-6.jpg') }}"
                                                 class="me-3 rounded-circle avatar-xs" alt="user-pic">
                                             <div class="flex-grow-1">
                                                 <a href="#!" class="stretched-link">
@@ -346,7 +333,7 @@
 
                                     <div class="text-reset notification-item d-block dropdown-item">
                                         <div class="d-flex">
-                                            <img src="assets/images/users/avatar-8.jpg"
+                                            <img src="{{ asset('assets/images/users/avatar-8.jpg') }}"
                                                 class="me-3 rounded-circle avatar-xs" alt="user-pic">
                                             <div class="flex-grow-1">
                                                 <a href="#!" class="stretched-link">
@@ -378,17 +365,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade p-4" id="alerts-tab" role="tabpanel"
-                                aria-labelledby="alerts-tab"></div>
 
-                            <div class="notification-actions" id="notification-actions">
-                                <div class="d-flex text-muted justify-content-center">
-                                    Select <div id="select-content" class="text-body fw-semibold px-1">0</div>
-                                    Result <button type="button" class="btn btn-link link-danger p-0 ms-3"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#removeNotificationModal">Remove</button>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -397,8 +374,8 @@
                     <button type="button" class="btn material-shadow-none" id="page-header-user-dropdown"
                         data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="d-flex align-items-center">
-                            <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
-                                alt="Header Avatar">
+                            <img class="rounded-circle header-profile-user"
+                                src="{{ asset('assets/images/users/avatar-1.jpg') }}" alt="Header Avatar">
                             <span class="text-start ms-xl-2">
                                 <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Anna
                                     Adame</span>
@@ -416,7 +393,8 @@
                                 class="mdi mdi-message-text-outline text-muted fs-16 align-middle me-1"></i>
                             <span class="align-middle">Messages</span></a>
                         <div class="dropdown-divider"></div>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                            style="display: none;">
                             @csrf
                         </form>
 
