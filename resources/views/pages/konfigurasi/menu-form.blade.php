@@ -1,4 +1,4 @@
-<x-form.modal title="Form Modal">
+<x-form.modal title="Form Menu">
     @if ($data->id)
         @method('PUT')
     @endif
@@ -25,8 +25,6 @@
         <div class="col-md-6">
             <x-form.radio label="Level Menu" name="level_menu" inline="true"
                 value="{{ $data->main_menu_id ? 'sub_menu' : 'main_menu' }}" :options="['Main menu' => 'main_menu', 'Sub menu' => 'sub_menu']" />
-
-
             {{-- <div>
                 <label class="form-label">Level Menu</label>
             </div>
