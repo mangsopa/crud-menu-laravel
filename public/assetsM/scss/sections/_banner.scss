@@ -1,0 +1,167 @@
+.banner {
+    background: url('../img/banner-bg-2.jpg') center center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($color-1, 0.8);
+        z-index: -1;
+    }
+    .banner-txt {
+        text-align: center;
+        padding-top: 200px;
+        h4 {
+            font-size: 20px;
+            line-height: 100%;
+            text-transform: uppercase;
+            // color: $white;
+            margin-bottom: 18px;
+            letter-spacing: 3px;
+            @include text-gradient-1;
+            font-weight: 700;
+        }
+        h1 {
+            font-size: 70px;
+            line-height: 90px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $white;
+            margin-bottom: 37px;
+        }
+    }
+    &.banner-3 {
+        background: url('../img/banner-3.jpg') center bottom no-repeat;
+        background-size: cover;
+        .banner-txt {
+            text-align: left;
+        }
+        .part-img {
+            margin-left: -100px;
+            img {
+                width: auto;
+                max-width: none;
+                mix-blend-mode: lighten;
+            }
+        }
+        &:after {
+            background: rgba($color-1, 0.6);
+        }
+    }
+}
+
+// banner slider 
+.banner-slider {
+    background: #111;
+    .banner.slide-2 {
+        background: url('../img/banner-bg-3.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    .banner.slide-3 {
+        background: url('../img/banner-bg-4.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    .owl-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 0;
+        opacity: 0;
+        @include transition($transition);
+        &.disabled {
+            display: flex;
+        }
+        .owl-prev, .owl-next {
+            display: inline-flex;
+            width: 60px;
+            height: 60px;
+            background: $gradient-1;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            color: $white;        
+        }
+        .owl-next {
+            position: relative;
+            z-index: 2;
+            &:after {
+                position: absolute;
+                content: '';
+                left: 2px;
+                top: 2px;
+                bottom: 2px;
+                right: 2px;
+                background: #2a2a2a;
+                z-index: -1;
+                border-radius: 50%;
+            }
+        }
+    }
+    .owl-dots {
+        position: absolute;
+        bottom: 144px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: inline-block;
+        .owl-dot {
+            width: 10px;
+            height: 10px;
+            background: $gradient-1;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 10px;
+            @include transition($transition);
+            opacity: .7;
+            &.active {
+                width: 50px;
+                border-radius: 50px;
+                opacity: 1;
+            }
+        }
+    }
+    &:hover {
+        .owl-nav {
+            padding: 0 50px;
+            opacity: 1;
+        }
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+    .banner-slider .owl-nav {
+        position: absolute;
+        top: auto;
+        transform: inherit;
+        bottom: 0;
+        padding: 0 30px!important;
+        opacity: 1!important;
+        justify-content: center;
+        bottom: 30px;
+        .owl-prev, .owl-next {
+            height: 40px;
+            width: 40px;
+            margin: 0 10px;
+        }
+    }
+    .banner-slider .owl-dots {
+        bottom: 84px!important;
+        .owl-dot {
+            width: 5px;
+            height: 5px;
+        }
+    }
+
+    .banner.banner-3 .part-img {
+        display: none;
+    }
+}

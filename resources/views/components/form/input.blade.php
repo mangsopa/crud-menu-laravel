@@ -1,7 +1,7 @@
-@props(['name', 'label', 'value' => '', 'placeholder' => $label])
+@props(['name', 'label', 'value' => '', 'placeholder' => $label, 'id' => $name])
 
 <div>
-    <label for="namaMenu" class="form-label">{{ $label }}</label>
-    <input type="text" class="form-control" id="namaMenu" name="{{ $name }}" value="{{ $value }}"
-        placeholder="{{ $placeholder }}">
+    <label for="{{ $id }}" class="form-label">{{ $label }}</label>
+    <input type="text" id="{{ $id }}" {{ $attributes->merge(['class' => 'form-control']) }}
+        name="{{ $name }}" value="{{ $value }}" placeholder="{{ $placeholder }}">
 </div>

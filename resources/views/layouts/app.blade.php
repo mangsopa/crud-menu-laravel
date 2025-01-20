@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <title>@yield('title', 'Dashboard')</title>
-
+    <meta name="csrf_token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="{{ asset('assets/js/layout.js') }}"></script>
@@ -77,6 +77,13 @@
     <script src="{{ asset('assets/js/pages/datatables.init.js') }}"></script>
 
     <script>
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name=csrf_token]').attr('content')
+            }
+        });
+
+
         function showToast(status = 'success', message) {
             iziToast[status]({
                 title: status == 'success' ? 'Success' : 'Error',

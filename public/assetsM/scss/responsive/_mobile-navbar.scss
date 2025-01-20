@@ -1,0 +1,124 @@
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+    .header .bottom-header .navbar {
+        .collapse:not(.show) {
+            display: block;
+            height: 100%!important;
+            overflow-y: scroll;
+        }
+        &:after {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 1px;
+            height: 100%;
+            background: $gradient-1;
+            opacity: 0.3;
+        }
+    }
+
+    .header .bottom-header .navbar {
+        padding: 0;
+        position: fixed;
+        z-index: 3;
+        background: #1e1e1e;
+        width: 240px;
+        top: 0;
+        bottom: 90px;
+        right: -240px;
+        @include transition($transition);
+    }
+
+    body {
+        position: relative;
+        right: 0;
+        @include transition($transition);
+    }
+
+    .header .bottom-header .navbar .navbar-nav .nav-item:last-child {
+        margin-bottom: 0!important;
+    }
+    .header .bottom-header .navbar .navbar-nav .nav-item, .header .bottom-header .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+        font-size: 15px;
+    }
+    .header .bottom-header .navbar .navbar-nav .nav-item {
+        padding: 10px 20px;
+    }
+    .header .bottom-header .navbar .navbar-nav .nav-item.dropdown .nav-link {
+        margin-right: 0;
+    }
+    .header .bottom-header .navbar .navbar-nav .nav-item.dropdown .nav-link:after {
+        right: 0;
+    }
+}
+
+
+// mobile taskbar
+.mobile-taskbar {
+    display: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+    .mobile-taskbar {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 555;
+        background: #2a2a2a;
+        padding: 15px 10px;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            li {
+                display: inline-block;
+                flex: 1;
+                a {
+                    text-align: center;
+                    display: inline-block;
+                    color: $white;
+                    font-size: 15px;
+                    span {
+                        display: block;
+                        &.icon {
+                            img {
+                                height: 25px;
+                                width: auto;
+                                max-width: none;
+                            }
+                        }
+                        &.text {
+                            font-size: 13px;
+                            margin-top: 7px;
+                            text-transform: capitalize;;
+                        }
+                    }
+                }
+                &.back-top {
+                    margin: 0 -10px;
+                    flex: 0;
+                    a {
+                        background: $gradient-1;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        width: 40px;
+                        height: 60px;
+                        position: relative;
+                        top: -32px;
+                        border-radius: 30px 30px 30px 30px;
+                        margin: 0 11px;
+                        img {
+                            height: 35px;
+                            width: auto;
+                            max-width: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

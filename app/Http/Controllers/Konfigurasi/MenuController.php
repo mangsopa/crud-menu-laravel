@@ -10,6 +10,8 @@ use App\Models\Permission;
 use App\Repositories\MenuRepository;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Cache;
+use Mavinoo\Batch\BatchFacade;
 
 class MenuController extends Controller
 {
@@ -24,6 +26,27 @@ class MenuController extends Controller
         $title = 'Konfigurasi Menu';
         $this->authorize('read konfigurasi/menu');
         return $menuDataTable->render('pages.konfigurasi.menu', compact('title'));
+    }
+
+    function sort()
+    {
+        $menus = $this->repository->getMenus();
+
+        $data = [];
+        $i = 0;
+        foreach ($menus as $mm) {
+            $i++;
+            $data[] = ['id' => $mm->id, 'orders' => $i];
+            foreach ($mm->subMenus as $sm) {
+                $i++;
+                $data[] = ['id' => $sm->id, 'orders' => $i];
+            }
+        }
+
+        Cache::forget('menus');
+
+        BatchFacade::update(new Menu(), $data, 'id');
+        responseSuccess(true);
     }
 
     function create(Menu $menu)

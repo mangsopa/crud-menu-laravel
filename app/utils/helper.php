@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Konfigurasi\Menu;
+use App\Repositories\MenuRepository;
 use Illuminate\Support\Facades\Cache;
 
 if (!function_exists('responseError')) {
@@ -38,14 +39,9 @@ if (!function_exists('responseSuccess')) {
 if (!function_exists('menus')) {
     function menus()
     {
-
         if (!Cache::has('menus')) {
-            $menus = Menu::with(['subMenus' => function ($query) {
-                return $query->orderBy('orders');
-            }])->whereNull('main_menu_id')
-                ->active()
-                ->orderBy('orders')
-                ->get()->groupBy('category');
+            $menus = (new MenuRepository())->getMenus()->groupBy('category');
+
             Cache::forever('menus', $menus);
         } else {
             $menus = Cache::get('menus');

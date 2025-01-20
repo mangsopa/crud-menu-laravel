@@ -15,8 +15,14 @@
                             <div class="row">
                                 <div class="col-12">
                                     @can('create konfigurasi/menu')
-                                        <a class="btn btn-success mb-3 add" href="{{ route('konfigurasi.menu.create') }}">
+                                        <a class="btn btn-success mb-3 add btn-md"
+                                            href="{{ route('konfigurasi.menu.create') }}">
                                             <i class="ri-add-line align-bottom me-1"></i> Add</button>
+                                        </a>
+                                    @endcan
+                                    @can('sort konfigurasi/menu')
+                                        <a class="btn btn-success mb-3 sort btn-md" href="{{ route('konfigurasi.menu.sort') }}">
+                                            Sort Menu</button>
                                         </a>
                                     @endcan
                                 </div>
@@ -42,6 +48,16 @@
                     }
                 })
             }
+
+            $('.sort').on('click', function(e) {
+                e.preventDefault();
+
+                handleAjax(this.href, 'put')
+                    .onSuccess(function(res) {
+                        window.location.reload()
+                    }, false)
+                    .execute();
+            })
 
             $('.add').on('click', function(e) {
                 e.preventDefault();
