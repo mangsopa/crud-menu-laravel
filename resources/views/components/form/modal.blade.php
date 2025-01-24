@@ -16,7 +16,9 @@
             <div class="modal-footer">
                 <a href="javascript:void(0);" class="btn btn-link link-success fw-medium material-shadow-none"
                     data-bs-dismiss="modal"><i class="ri-close-line me-1 align-middle"></i> Close</a>
-                <button type="submit" class="btn btn-primary ">Save changes</button>
+                @if ($action)
+                    <button type="submit" class="btn btn-primary ">Save</button>
+                @endif
             </div>
         </form>
     </div>

@@ -50,3 +50,19 @@ if (!function_exists('menus')) {
         return $menus;
     }
 }
+
+if (!function_exists('user')) {
+    /**
+     * Summary of user
+     * @param string $id
+     * @return \App\Models\User | string
+     */
+    function user($id = null)
+    {
+        if ($id) {
+            return request()->user()->{$id};
+        }
+
+        return request()->user();
+    }
+}
