@@ -15,7 +15,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     @can('create konfigurasi/roles')
-                                        <a class="btn btn-success mb-3 add btn-md"
+                                        <a class="btn btn-success mb-3 btn-md action"
                                             href="{{ route('konfigurasi.roles.create') }}">
                                             <i class="ri-add-line align-bottom me-1"></i> Add</button>
                                         </a>
@@ -36,24 +36,36 @@
         <script>
             const datatable = 'role-table';
 
-            $('.add').on('click', function(e) {
+            handleAction(datatable);
+
+            $('#' + datatable).on('click', '.delete', function(e) {
                 e.preventDefault();
 
-                handleAjax(this.href).onSuccess(function(res) {
-                    handleFormSubmit('#form_action')
-                        .setDataTable(datatable)
-                        .init();
-                }).execute();
-            })
+                const deleteUrl = $(this).attr('href');
 
-            $('#' + datatable).on('click', '.action', function(e) {
-                e.preventDefault();
-                handleAjax(this.href)
-                    .onSuccess(function(res) {
-                        handleFormSubmit('#form_action')
-                            .setDataTable(datatable)
-                            .init();
-                    }).execute();
+                Swal.fire({
+                    title: "Are you sure?",
+                    text: "You won't be able to revert this!",
+                    icon: "warning",
+                    showCancelButton: true,
+                    customClass: {
+                        confirmButton: "btn btn-primary w-xs me-2 mt-2",
+                        cancelButton: "btn btn-danger w-xs mt-2"
+                    },
+                    confirmButtonText: "Yes, delete it!",
+                    buttonsStyling: false,
+                    showCloseButton: true
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        handleAjax(deleteUrl, 'delete')
+                            .onSuccess(function(res) {
+                                showToast(res.status, res.message);
+
+                                // Reload DataTable
+                                window.LaravelDataTables[datatable].ajax.reload();
+                            }, false).execute();
+                    }
+                });
             });
 
             function toggleCheckbox(checkedId, uncheckedId) {

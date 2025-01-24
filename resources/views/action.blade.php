@@ -6,7 +6,8 @@
         style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate3d(0px, 29.4643px, 0px);">
         @foreach ($actions as $key => $item)
             <li>
-                <a class="dropdown-item edit-item-btn action" href="{{ $item }}">
+                <a class="dropdown-item edit-item-btn {{ $key == 'Delete' ? 'delete' : 'action' }}"
+                    href="{{ $item }}">
                     {{ $key }}
                 </a>
             </li>

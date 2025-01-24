@@ -36,6 +36,16 @@ if (!function_exists('responseSuccess')) {
     }
 }
 
+if (!function_exists('responseSuccessDelete')) {
+    function responseSuccessDelete()
+    {
+        return response()->json([
+            'status' => 'success',
+            'message' => 'Data has been deleted successfully'
+        ]);
+    }
+}
+
 if (!function_exists('menus')) {
     function menus()
     {

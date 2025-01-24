@@ -15,7 +15,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     @can('create konfigurasi/menu')
-                                        <a class="btn btn-success mb-3 add btn-md"
+                                        <a class="btn btn-success mb-3 btn-md action"
                                             href="{{ route('konfigurasi.menu.create') }}">
                                             <i class="ri-add-line align-bottom me-1"></i> Add</button>
                                         </a>
@@ -39,6 +39,8 @@
         {!! $dataTable->scripts() !!}
 
         <script>
+            const datatable = 'menu-table';
+
             function handleMenuChange() {
                 $('[name=level_menu]').on('change', function() {
                     if (this.value == 'sub_menu') {
@@ -59,15 +61,19 @@
                     .execute();
             })
 
-            $('.add').on('click', function(e) {
-                e.preventDefault();
+            // $('.add').on('click', function(e) {
+            //     e.preventDefault();
 
-                handleAjax(this.href).onSuccess(function(res) {
-                    handleMenuChange();
-                    handleFormSubmit('#form_action')
-                        .setDataTable('menu-table')
-                        .init();
-                }).execute();
+            //     handleAjax(this.href).onSuccess(function(res) {
+            //         handleMenuChange();
+            //         handleFormSubmit('#form_action')
+            //             .setDataTable('menu-table')
+            //             .init();
+            //     }).execute();
+            // })
+
+            handleAction(datatable, function() {
+                handleMenuChange()
             })
 
             $('#menu-table').on('click', '.action', function(e) {

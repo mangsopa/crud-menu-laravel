@@ -26,6 +26,9 @@
 
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
 
+    <!-- Sweet Alert css-->
+    <link href="{{ asset('assets/libs/sweetalert2/sweetalert2.min.css') }}" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
@@ -51,6 +54,7 @@
         @include('partials.footer')
 
     </div>
+
     <script src="{{ asset('assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('assets/libs/simplebar/simplebar.min.js') }}"></script>
     <script src="{{ asset('assets/libs/node-waves/waves.min.js') }}"></script>
@@ -76,129 +80,13 @@
 
     <script src="{{ asset('assets/js/pages/datatables.init.js') }}"></script>
 
-    <script>
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name=csrf_token]').attr('content')
-            }
-        });
+    <script src="{{ asset('assets/libs/sweetalert2/sweetalert2.min.js') }}"></script>
 
+    <!-- Sweet alert init js-->
+    <script src="{{ asset('assets/js/pages/sweetalerts.init.js') }}"></script>
 
-        function showToast(status = 'success', message) {
-            iziToast[status]({
-                title: status == 'success' ? 'Success' : 'Error',
-                message: message,
-                position: "topRight"
-            })
-        }
+    <script src="{{ asset('assets/js/main.js') }}"></script>
 
-        function handleFormSubmit(selector) {
-            function init() {
-                const _this = this;
-                $(selector).on('submit', function(e) {
-                    e.preventDefault();
-                    const _form = this;
-                    $.ajax({
-                        url: this.action,
-                        method: this.method,
-                        data: new FormData(_form),
-                        contentType: false,
-                        processData: false,
-                        beforeSend: function() {
-                            $(_form).find('.is-invalid').removeClass(
-                                'is-invalid');
-                            $(_form).find('.invalid-feedback').remove();
-                        },
-                        success: (res) => {
-                            if (_this.runDefaultSuccessCallback) {
-                                $('#modal_action').modal('hide');
-                            }
-
-                            showToast(res.status, res.message);
-
-                            _this.onSuccessCallback && _this.onSuccessCallback(res);
-
-                            _this.dataTableId && window.LaravelDataTables[_this.dataTableId].ajax
-                                .reload();
-                        },
-                        error: function(err) {
-                            const errors = err.responseJSON?.errors;
-
-                            if (errors) {
-                                for (let [key, message] of Object.entries(
-                                        errors)) {
-                                    // console.log(message);
-
-                                    $(`[name=${key}]`).addClass('is-invalid')
-                                        .parent()
-                                        .append(
-                                            `<div class="invalid-feedback">${message}</div>`
-                                        );
-                                }
-                            }
-                            showToast('error', err.responseJSON?.message);
-                        }
-                    })
-                })
-            }
-
-            function onSuccess(cb, runDefault = true) {
-                this.onSuccessCallback = cb;
-                this.runDefaultSuccessCallback = runDefault;
-                return this;
-            }
-
-            function setDataTable(id) {
-                this.dataTableId = id;
-                return this;
-            }
-
-            return {
-                init,
-                runDefaultSuccessCallback: true,
-                onSuccess,
-                setDataTable
-            }
-        }
-
-        function handleAjax(url, method = 'get') {
-            function onSuccess(cb, runDefault = true) {
-                this.onSuccessCallback = cb;
-                this.runDefaultSuccessCallback = runDefault;
-                return this;
-            }
-
-            function execute() {
-                $.ajax({
-                    url,
-                    method,
-                    success: (res) => {
-                        if (this.runDefaultSuccessCallback) {
-                            const modal = $('#modal_action')
-                            modal.html(res)
-                            modal.modal('show')
-                        }
-
-                        this.onSuccessCallback && this.onSuccessCallback()
-                    },
-                    error: function(err) {
-                        console.log(err);
-                    }
-                })
-            }
-
-            function onError(cb) {
-                this.onErrorCallback = cb;
-                return this;
-            }
-
-            return {
-                execute,
-                onSuccess,
-                runDefaultSuccessCallback: true
-            }
-        }
-    </script>
     @stack('js')
 
 </body>
