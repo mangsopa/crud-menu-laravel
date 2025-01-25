@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Konfigurasi Role')
+@section('title', 'Konfigurasi Permission')
 
 @section('content')
     <div class="page-content">
@@ -14,9 +14,9 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-12">
-                                    @can('create konfigurasi/roles')
+                                    @can('create konfigurasi/permissions')
                                         <a class="btn btn-success mb-3 btn-md action"
-                                            href="{{ route('konfigurasi.roles.create') }}">
+                                            href="{{ route('konfigurasi.permissions.create') }}">
                                             <i class="ri-add-line align-bottom me-1"></i> Add</button>
                                         </a>
                                     @endcan
@@ -34,7 +34,7 @@
         {!! $dataTable->scripts() !!}
 
         <script>
-            const datatable = 'role-table';
+            const datatable = 'permission-table';
 
             handleAction(datatable);
 

@@ -1,9 +1,10 @@
 <?php
 
 use App\Http\Controllers\F_Auth\AuthController;
+use App\Http\Controllers\Konfigurasi\AksesRoleController;
 use App\Http\Controllers\Konfigurasi\MenuController;
+use App\Http\Controllers\Konfigurasi\PermissionController;
 use App\Http\Controllers\Konfigurasi\RoleController;
-use App\Http\Controllers\LandingController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -26,5 +27,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::put('menu/sort', [MenuController::class, 'sort'])->name('menu.sort');
         Route::resource('menu', MenuController::class);
         Route::resource('roles', RoleController::class);
+        Route::resource('permissions', PermissionController::class);
+        Route::get('akses-role/{role}/role', [AksesRoleController::class, 'getPermissionsByRole']);
+        Route::resource('akses-role', AksesRoleController::class)->except(['create', 'store', 'destroy'])->parameters(['akses-role' => 'role']);
     });
 });

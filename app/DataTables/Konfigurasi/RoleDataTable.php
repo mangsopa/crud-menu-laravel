@@ -3,6 +3,7 @@
 namespace App\DataTables\Konfigurasi;
 
 use App\Models\Role;
+use App\Traits\DataTableHelper;
 use Illuminate\Database\Eloquent\Builder as QueryBuilder;
 use Yajra\DataTables\EloquentDataTable;
 use Yajra\DataTables\Html\Builder as HtmlBuilder;
@@ -14,6 +15,8 @@ use Yajra\DataTables\Services\DataTable;
 
 class RoleDataTable extends DataTable
 {
+    use DataTableHelper;
+
     /**
      * Build the DataTable class.
      *
@@ -23,14 +26,7 @@ class RoleDataTable extends DataTable
     {
         return (new EloquentDataTable($query))
             ->addColumn('action', function ($row) {
-                $actions = [];
-                $actions['Detail'] = route(str_replace('/', '.', request()->path()) . '.show', $row->id);
-                if (user()->can('update ' . request()->path())) {
-                    $actions['Edit'] = route(str_replace('/', '.', request()->path()) . '.edit', $row->id);
-                }
-                if (user()->can('delete ' . request()->path())) {
-                    $actions['Delete'] = route(str_replace('/', '.', request()->path()) . '.destroy', $row->id);
-                }
+                $actions = $this->basicActions($row);
                 return view('action', compact('actions'));
             })->addIndexColumn();
     }

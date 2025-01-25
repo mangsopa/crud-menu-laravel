@@ -96,11 +96,6 @@ class MenuController extends Controller
         return responseSuccess();
     }
 
-    function show(Menu $menu)
-    {
-        //
-    }
-
     function edit(Menu $menu)
     {
         $this->authorize('update konfigurasi/menu');
@@ -124,11 +119,6 @@ class MenuController extends Controller
 
         $menu->save();
 
-        // return view('pages.konfigurasi.menu-form', [
-        //     'action' => route('konfigurasi.menu.store'),
-        //     'data' => $menu,
-        //     'mainMenus' => $this->repository->getMainMenus(),
-        // ]);
         return responseSuccess(true);
     }
 

@@ -9,7 +9,7 @@ function handleAction(datatable, onShowAction, OnSuccessAction) {
         e.preventDefault();
         handleAjax(this.href)
             .onSuccess(function (res) {
-                onShowAction && onShowAction(res);
+                onShowAction && onShowAction(res); // Pastikan dipanggil
                 handleFormSubmit('#form_action')
                     .setDataTable(datatable)
                     .onSuccess(function (res) {
@@ -20,12 +20,47 @@ function handleAction(datatable, onShowAction, OnSuccessAction) {
     });
 }
 
+
 function showToast(status = 'success', message) {
     iziToast[status]({
         title: status == 'success' ? 'Success' : 'Error',
         message: message,
         position: "topRight"
     })
+}
+
+function handleDelete(datatable, onSuccessAction) {
+    $('#' + datatable).on('click', '.delete', function (e) {
+        e.preventDefault();
+
+        const deleteUrl = $(this).attr('href');
+
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            customClass: {
+                confirmButton: "btn btn-primary w-xs me-2 mt-2",
+                cancelButton: "btn btn-danger w-xs mt-2"
+            },
+            confirmButtonText: "Yes, delete it!",
+            buttonsStyling: false,
+            showCloseButton: true
+        }).then((result) => {
+            if (result.isConfirmed) {
+                handleAjax(deleteUrl, 'delete')
+                    .onSuccess(function (res) {
+
+                        onSuccessAction && onSuccessAction(res);
+                        showToast(res.status, res.message);
+
+                        // Reload DataTable
+                        window.LaravelDataTables[datatable].ajax.reload(null, false);
+                    }, false).execute();
+            }
+        });
+    });
 }
 
 function handleFormSubmit(selector, options = {}) {
@@ -56,9 +91,9 @@ function handleFormSubmit(selector, options = {}) {
                 onSuccessCallback && onSuccessCallback(res);
 
                 // Reload DataTable if provided
-                dataTableId && window.LaravelDataTables[dataTableId].ajax.reload();
+                dataTableId && window.LaravelDataTables[dataTableId].ajax.reload(null, false);
 
-                window.LaravelDataTables[datatable].ajax.reload();
+                window.LaravelDataTables[datatable].ajax.reload(null, false);
 
             },
             error: function (err) {

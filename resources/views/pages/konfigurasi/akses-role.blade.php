@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Konfigurasi Role')
+@section('title', 'Konfigurasi Akses Role')
 
 @section('content')
     <div class="page-content">
@@ -36,7 +36,16 @@
         <script>
             const datatable = 'role-table';
 
-            handleAction(datatable);
+            handleAction(datatable, function() {
+                $('.copy-role').on('change', function() {
+                    handleAjax(`{{ url('konfigurasi/akses-role') }}/${this.value}/role`)
+                        .onSuccess(function(res) {
+                            $('#menu_permissions').html(res);
+
+                        }, false)
+                        .execute();
+                })
+            })
 
             handleDelete(datatable);
         </script>

@@ -10,18 +10,12 @@ use Illuminate\Http\Request;
 
 class RoleController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index(RoleDataTable $roleDataTable)
     {
         $title = 'Konfigurasi Role';
         return $roleDataTable->render('pages.konfigurasi.role', compact('title'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
         return view('pages.konfigurasi.role-form', [
@@ -30,9 +24,6 @@ class RoleController extends Controller
         ]);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(RoleRequest $request)
     {
         $role = new Role($request->validated());
@@ -42,9 +33,6 @@ class RoleController extends Controller
         return responseSuccess();
     }
 
-    /**
-     * Display the specified resource.
-     */
     public function show(Role $role)
     {
         return view('pages.konfigurasi.role-form', [
@@ -52,9 +40,6 @@ class RoleController extends Controller
         ]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
     public function edit(Role $role)
     {
         return view('pages.konfigurasi.role-form', [
@@ -63,9 +48,6 @@ class RoleController extends Controller
         ]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
     public function update(RoleRequest $request, Role $role)
     {
         $role->fill($request->validated());
@@ -75,9 +57,6 @@ class RoleController extends Controller
         return responseSuccess(true);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
     public function destroy(Role $role)
     {
         $role->delete();

@@ -1,6 +1,6 @@
-@props(['size' => 'lg', 'title', 'action' => null])
+@props(['size' => 'md', 'title', 'action' => null])
 
-<div class="modal-dialog modal-fullscreen-{{ $size }}-down modal-dialog-centered">
+<div class="modal-dialog modal-lg modal-fullscreen-{{ $size }}-down modal-dialog-centered" role="dialog">
     <div class="modal-content">
         <form action="{{ $action }}" method="post" id="form_action">
             @csrf

@@ -48,7 +48,7 @@
                     } else {
                         $('#main_menu_wrapper').addClass('d-none');
                     }
-                })
+                });
             }
 
             $('.sort').on('click', function(e) {
@@ -59,20 +59,11 @@
                         window.location.reload()
                     }, false)
                     .execute();
-            })
+            });
 
             handleAction(datatable, function() {
-                handleMenuChange()
-            })
-
-            function toggleCheckbox(checkedId, uncheckedId) {
-                const checkedBox = document.getElementById(checkedId);
-                const uncheckedBox = document.getElementById(uncheckedId);
-
-                if (checkedBox.checked) {
-                    uncheckedBox.checked = false;
-                }
-            }
+                handleMenuChange();
+            });
         </script>
     @endpush
 

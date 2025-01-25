@@ -10,7 +10,7 @@ class UserSeeder extends Seeder
 {
     public function run(): void
     {
-        $users = ['admin', 'users'];
+        $users = ['admin', 'users', 'publisher', 'writer'];
 
         $default = [
             'password' => bcrypt('password'),
