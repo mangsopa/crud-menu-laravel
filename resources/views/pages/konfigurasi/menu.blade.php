@@ -61,31 +61,9 @@
                     .execute();
             })
 
-            // $('.add').on('click', function(e) {
-            //     e.preventDefault();
-
-            //     handleAjax(this.href).onSuccess(function(res) {
-            //         handleMenuChange();
-            //         handleFormSubmit('#form_action')
-            //             .setDataTable('menu-table')
-            //             .init();
-            //     }).execute();
-            // })
-
             handleAction(datatable, function() {
                 handleMenuChange()
             })
-
-            $('#menu-table').on('click', '.action', function(e) {
-                e.preventDefault();
-                handleAjax(this.href)
-                    .onSuccess(function(res) {
-                        handleMenuChange();
-                        handleFormSubmit('#form_action')
-                            .setDataTable('menu-table')
-                            .init();
-                    }).execute();
-            });
 
             function toggleCheckbox(checkedId, uncheckedId) {
                 const checkedBox = document.getElementById(checkedId);
