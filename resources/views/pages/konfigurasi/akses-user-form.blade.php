@@ -1,4 +1,4 @@
-<x-form.modal title="Form Akses Role" action="{{ $action ?? null }}">
+<x-form.modal title="Form Akses User" action="{{ $action ?? null }}">
     @if ($data->id)
         @method('PUT')
     @endif
@@ -6,7 +6,7 @@
         <div class="col-xl-12">
             <h4>User : {{ $data->name }}</h4>
             <div class="mb-3 mt-3">
-                <x-form.select class="copy mb-3" label="Copy dari role" placeholder="Pilih user" :options="$users" />
+                <x-form.select class="copy mb-3" label="Copy dari user" placeholder="Pilih user" :options="$users" />
                 <x-form.input label="Cari menu" name="search" class="search" placeholder="Cari..." />
             </div>
             <div>

@@ -50,7 +50,7 @@
 
                     const checked = parent.find('.child:checked')
 
-                    $(this).prop('checked', childs.length === checked.length)
+                    parent.find('.parent').prop('checked', childs.length === checked.length)
                 })
             }
 
@@ -69,7 +69,7 @@
                 $('.copy-role').on('change', function() {
                     handleAjax(`{{ url('konfigurasi/akses-role') }}/${this.value}/role`)
                         .onSuccess(function(res) {
-                            $('#menu_permissions').html(res);
+                            $('#menu_permissions').html(res)
                             handleCheckMenu();
                         }, false)
                         .execute();

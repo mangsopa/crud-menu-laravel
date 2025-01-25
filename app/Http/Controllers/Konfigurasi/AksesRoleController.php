@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Konfigurasi;
 
 use App\DataTables\Konfigurasi\RoleDataTable;
 use App\Http\Controllers\Controller;
-use App\Models\Konfigurasi\Menu;
 use App\Models\Role;
 use App\Repositories\MenuRepository;
 use Illuminate\Http\Request;
@@ -43,7 +42,7 @@ class AksesRoleController extends Controller
     {
         return view('pages.konfigurasi.akses-role-items', [
             'data' => $role,
-            'menus' => $this->getMenus()
+            'menus' =>  $this->menuRepository->getMainMenuWithPermissions(),
         ]);
     }
 
