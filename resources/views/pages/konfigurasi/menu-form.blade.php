@@ -34,9 +34,7 @@
 
         @if (!$data->id)
             <div class="col-md-12" id="permission_wrapper">
-                <div>
-                    <label for="" class="mb-2 form-label d-block">Permissions</label>
-                </div>
+
                 <div class="d-flex mb-2">
                     @foreach (['create', 'read', 'update', 'delete'] as $item)
                         <x-form.checkbox name="permissions[]" id="{{ $item }}_permissions"

@@ -4,7 +4,7 @@
         <td>
             @foreach ($mm->permissions as $permission)
                 <div class="form-check form-switch form-check-inline">
-                    <input class="form-check-input" name="permissions[]" @checked($data->hasPermissionTo($permission->name)) type="checkbox"
+                    <input class="form-check-input" name="permissions[]" @checked($data->hasDirectPermission($permission->name)) type="checkbox"
                         role="switch" value="{{ $permission->name }}"
                         id="permission-{{ $mm->id . '-' . $permission->id }}">
                     <label class="form-check-label" for="permission-{{ $mm->id . '-' . $permission->id }}">
@@ -20,7 +20,7 @@
             <td>
                 @foreach ($sm->permissions as $permission)
                     <div class="form-check form-switch form-check-inline">
-                        <input class="form-check-input child" name="permissions[]" @checked($data->hasPermissionTo($permission->name))
+                        <input class="form-check-input child" name="permissions[]" @checked($data->hasDirectPermission($permission->name))
                             type="checkbox" role="switch" value="{{ $permission->name }}"
                             id="permission-{{ $sm->id . '-' . $permission->id }}">
                         <label class="form-check-label" for="permission-{{ $sm->id . '-' . $permission->id }}">

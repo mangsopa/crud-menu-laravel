@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\F_Auth\AuthController;
 use App\Http\Controllers\Konfigurasi\AksesRoleController;
+use App\Http\Controllers\Konfigurasi\AksesUserController;
 use App\Http\Controllers\Konfigurasi\MenuController;
 use App\Http\Controllers\Konfigurasi\PermissionController;
 use App\Http\Controllers\Konfigurasi\RoleController;
@@ -30,5 +31,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::resource('permissions', PermissionController::class);
         Route::get('akses-role/{role}/role', [AksesRoleController::class, 'getPermissionsByRole']);
         Route::resource('akses-role', AksesRoleController::class)->except(['create', 'store', 'destroy'])->parameters(['akses-role' => 'role']);
+        Route::get('akses-user/{user}/user', [AksesUserController::class, 'getPermissionsByUser']);
+        Route::resource('akses-user', AksesUserController::class)->except(['create', 'store', 'destroy'])->parameters(['akses-user' => 'user']);
     });
 });

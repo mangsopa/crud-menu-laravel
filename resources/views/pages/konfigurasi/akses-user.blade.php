@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Konfigurasi Akses Role')
+@section('title', 'Konfigurasi Akses User')
 
 @section('content')
     <div class="page-content">
@@ -24,7 +24,7 @@
         {!! $dataTable->scripts() !!}
 
         <script>
-            const datatable = 'role-table';
+            const datatable = 'user-table';
 
             function handleCheckMenu() {
                 $('.parent').on('click', function() {
@@ -66,8 +66,8 @@
                     });
                 })
 
-                $('.copy-role').on('change', function() {
-                    handleAjax(`{{ url('konfigurasi/akses-role') }}/${this.value}/role`)
+                $('.copy').on('change', function() {
+                    handleAjax(`{{ url('konfigurasi/akses-user') }}/${this.value}/user`)
                         .onSuccess(function(res) {
                             $('#menu_permissions').html(res);
                             handleCheckMenu();

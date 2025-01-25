@@ -121,7 +121,7 @@ class MenuSeeder extends Seeder
             'url' => $mm->url . '/roles',
             'category' => $mm->category,
         ]);
-        $this->attachMenupermission($sm, ['create', 'read', 'update', 'delete', 'sort'], ['admin']);
+        $this->attachMenupermission($sm, ['create', 'read', 'update', 'delete'], ['admin']);
 
         $sm = $mm->subMenus()->create([
             'name' => 'Permissions',
@@ -139,10 +139,10 @@ class MenuSeeder extends Seeder
 
         $sm = $mm->subMenus()->create([
             'name' => 'Users',
-            'url' => $mm->url . '/users',
+            'url' => $mm->url . '/akses-user',
             'category' => $mm->category,
         ]);
-        $this->attachMenupermission($sm, null, ['admin']);
+        $this->attachMenupermission($sm, ['read', 'update'], ['admin']);
 
         // $sm = Sub Menu
         $sm = $mm->subMenus()->create([
