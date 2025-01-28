@@ -47,6 +47,10 @@ if (!function_exists('responseSuccessDelete')) {
 }
 
 if (!function_exists('menus')) {
+    /**
+     * Summary of menus
+     * @return Collection
+     */
     function menus()
     {
         if (!Cache::has('menus')) {
@@ -74,5 +78,29 @@ if (!function_exists('user')) {
         }
 
         return request()->user();
+    }
+}
+
+if (!function_exists('urlMenu')) {
+    function urlMenu()
+    {
+        if (!Cache::has('urlMenu')) {
+
+            $menus = menus()->flatMap(fn($item) => $item);
+
+            $url = [];
+            foreach ($menus as $mm) {
+                $url[] = $mm->url;
+                foreach ($mm->subMenus as $sm) {
+                    $url[] = $sm->url;
+                }
+            }
+
+            Cache::forever('urlMenu', $url);
+        } else {
+            $url = Cache::get('urlMenu');
+        }
+
+        return $url;
     }
 }

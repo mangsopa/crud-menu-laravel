@@ -7,7 +7,7 @@
             <x-form.input name="name" value="{{ $data->name }}" label="Name" />
         </div>
         <div class="col-md-6">
-            <x-form.input name="category" value="{{ $data->kategori }}" label="Kategori" />
+            <x-form.input name="category" value="{{ $data->category }}" label="Kategori" />
         </div>
 
         <div class="col-md-12">

@@ -24,6 +24,13 @@ class MenuDataTable extends DataTable
         $user = request()->user();
 
         return (new EloquentDataTable($query))
+            ->addColumn('active', function ($row) {
+                if ($row->active == 1) {
+                    return '<span class="text-success"><i class="ri-checkbox-circle-line fs-17 align-middle"></i> Active</span>';
+                } else {
+                    return '<span class="text-danger"><i class="ri-close-circle-line fs-17 align-middle"></i> Inactive</span>';
+                }
+            })
             ->addColumn(
                 'action',
                 function ($row) use ($user) {
@@ -34,6 +41,7 @@ class MenuDataTable extends DataTable
                     return view('action', compact('actions'));
                 }
             )
+            ->rawColumns(['active', 'action'])
             ->setRowId('id');
     }
 

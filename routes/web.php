@@ -6,6 +6,7 @@ use App\Http\Controllers\Konfigurasi\AksesUserController;
 use App\Http\Controllers\Konfigurasi\MenuController;
 use App\Http\Controllers\Konfigurasi\PermissionController;
 use App\Http\Controllers\Konfigurasi\RoleController;
+use App\Http\Controllers\Master\ProdukController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -30,8 +31,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::resource('roles', RoleController::class);
         Route::resource('permissions', PermissionController::class);
         Route::get('akses-role/{role}/role', [AksesRoleController::class, 'getPermissionsByRole']);
-        Route::resource('akses-role', AksesRoleController::class)->except(['create', 'store', 'destroy'])->parameters(['akses-role' => 'role']);
+        Route::resource('akses-role', AksesRoleController::class)->except(['create', 'store', 'delete'])->parameters(['akses-role' => 'role']);
         Route::get('akses-user/{user}/user', [AksesUserController::class, 'getPermissionsByUser']);
-        Route::resource('akses-user', AksesUserController::class)->except(['create', 'store', 'destroy'])->parameters(['akses-user' => 'user']);
+        Route::resource('akses-user', AksesUserController::class)->except(['create', 'store', 'delete'])->parameters(['akses-user' => 'user']);
     });
 });
