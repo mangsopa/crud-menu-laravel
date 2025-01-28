@@ -42,3 +42,58 @@ Dibuat Dengan 💖 Oleh Sofa Ramadhan, Menggunakan ilmu tenaga dalam
 ![Screenshot 2025-01-29 050600](https://github.com/user-attachments/assets/dc54c529-c7a5-4e36-b90a-010c7e7c5992)
 
 ![Screenshot 2025-01-29 050626](https://github.com/user-attachments/assets/f7ab52e0-75e3-461d-b6d6-89b7fb21aa99)
+
+## Installation
+
+### Prerequisites
+
+Before you begin, ensure you have the following installed on your system:
+
+- PHP >= 8.0
+- Composer
+- MySQL or any other supported database
+- Web server (Apache, Nginx, etc.)
+
+### Steps
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/mangsopa/crud-menu-laravel.git starter-laravel
+   cd starter-laravel
+   ```
+
+2. **Install dependencies**
+   ```bash
+   composer install
+   ```
+
+3. **Copy the `.env` file**
+   ```bash
+   cp .env.example .env
+   ```
+
+4. **Generate application key**
+   ```bash
+   php artisan key:generate
+   ```
+
+5. **Configure the `.env` file**
+   Open the `.env` file and set your database credentials and other environment variables:
+   ```env
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=adms
+   DB_USERNAME=root
+   DB_PASSWORD=
+   ```
+
+6. **Run the migrations**
+   ```bash
+   php artisan migrate
+   ```
+
+7. **Serve the application**
+   ```bash
+   php artisan serve
+   ```
