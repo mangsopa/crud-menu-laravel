@@ -2,1654 +2,1095 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Miscoo - HTML Template For Online Game</title>
-    <!-- favicon -->
-    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="assetsM/css/bootstrap.min.css">
-    <!-- fontawesome icon  -->
-    <link rel="stylesheet" href="assetsM/css/fontawesome.min.css">
-    <!-- flaticon css -->
-    <link rel="stylesheet" href="assetsM/fonts/flaticon.css">
-    <!-- animate.css -->
-    <link rel="stylesheet" href="assetsM/css/animate.css">
-    <!-- Owl Carousel -->
-    <link rel="stylesheet" href="assetsM/css/owl.carousel.css">
-    <!-- <link rel="stylesheet" href="assetsM/css/owl.carousel.min.css"> -->
-    <link rel="stylesheet" href="assetsM/css/owl.carousel.css">
-    <!-- magnific popup -->
-    <link rel="stylesheet" href="assetsM/css/modal-video.min.css">
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="assetsM/css/style.css">
-    <!-- responsive -->
-    <link rel="stylesheet" href="assetsM/css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sasoft - Software Landing Page">
+
+    <!-- ========== Page Title ========== -->
+    <title>Software Payroll dan Absensi Gratis</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="assetsNew/img/favicon.png" type="image/x-icon">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="assetsNew/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assetsNew/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assetsNew/css/themify-icons.css" rel="stylesheet" />
+    <link href="assetsNew/css/elegant-icons.css" rel="stylesheet" />
+    <link href="assetsNew/css/flaticon-set.css" rel="stylesheet" />
+    <link href="assetsNew/css/magnific-popup.css" rel="stylesheet" />
+    <link href="assetsNew/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assetsNew/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="assetsNew/css/animate.css" rel="stylesheet" />
+    <link href="assetsNew/css/bootsnav.css" rel="stylesheet" />
+    <link href="assetsNew/style.css" rel="stylesheet">
+    <link href="assetsNew/css/responsive.css" rel="stylesheet" />
+    <!-- ========== End Stylesheet ========== -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assetsNew/js/html5/html5shiv.min.js"></script>
+      <script src="assetsNew/js/html5/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ========== Google Fonts ========== -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
 </head>
 
-<body data-spy="scroll" data-target="#navbar" data-offset="0">
+<style>
+    .pricing-item {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-    <!-- preloader begin -->
-    <div class="preloader">
-        <img src="assetsM/img/preloader.gif" alt="">
-    </div>
-    <!-- preloader end -->
+    .pricing-item:hover {
+        transform: scale(1.03);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+</style>
 
-    <!-- mobile taskbar begin -->
-    <div class="mobile-taskbar">
-        <ul>
-            <li>
-                <a href="#">
-                    <span class="icon">
-                        <img src="assetsM/img/svg/live-stream.svg" alt="">
-                    </span>
-                    <span class="text">in-play</span>
-                </a>
-            </li>
 
-            <li>
-                <a href="#">
-                    <span class="icon">
-                        <img src="assetsM/img/svg/poker-cards.svg" alt="">
-                    </span>
-                    <span class="text">Games</span>
-                </a>
-            </li>
+<body>
 
-            <li class="back-top">
-                <a href="#">
-                    <img src="assetsM/img/svg/up-arrow.png" alt="">
-                </a>
-            </li>
+    <!-- Preloader Start -->
+    <div class="se-pre-con"></div>
+    <!-- Preloader Ends -->
 
-            <li>
-                <a href="#">
-                    <span class="icon">
-                        <img src="assetsM/img/svg/test.svg" alt="">
-                    </span>
-                    <span class="text">Result</span>
-                </a>
-            </li>
+    <!-- Header
+    ============================================= -->
+    <header id="home">
 
-            <li class="user">
-                <a href="#">
-                    <span class="icon">
-                        <img src="assetsM/img/svg/user.svg" alt="">
-                    </span>
-                    <span class="text">Mr. Joh...</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <!-- mobile taskbar end -->
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-default attr-bg navbar-fixed dark no-background bootsnav">
 
-    <!-- header section begin -->
-    <div class="header">
-        <div class="row">
-            <div class="overflow-hidden col-xl-3 col-lg-3 d-xl-flex d-lg-flex d-block align-items-center">
-                <div class="row">
-                    <div class="col-xl-12 col-lg-12 col-7 d-xl-block d-lg-block">
-                        <div class="logo">
-                            <a href="index.html"><img src="assetsM/img/logo.png" alt="LOGO"></a>
-                        </div>
-                    </div>
-                    <div class="d-xl-none d-lg-none col-5 d-flex align-items-center justify-content-end">
-                        <button class="navbar-toggler" type="button">
-                            <i class="fas fa-bars"></i>
-                        </button>
-                    </div>
+            <div class="container-full">
+
+                <!-- Start Atribute Navigation -->
+                <div class="attr-nav light">
+                    <ul>
+                        <li class="button">
+                            <a href="#">Sign Up</a>
+                        </li>
+                    </ul>
                 </div>
+                <!-- End Atribute Navigation -->
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assetsNew/img/logo.png" class="logo" alt="Logo">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="dropdown active dropdown-right">
+                            <a href="#home" class="dropdown-toggle smooth-menu active" data-toggle="dropdown">Home</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html">Home Version One</a></li>
+                                <li><a href="index-2.html">Home Version Two</a></li>
+                                <li><a href="index-3.html">Home Version Three</a></li>
+                                <li><a href="index-4.html">Home Version Four</a></li>
+                                <li><a href="index-5.html">Home Version Five</a></li>
+                                <li><a href="index-6.html">Home Version Six <span class="badge">New</span></a></li>
+                                <li><a href="index-7.html">Home Version Seven <span class="badge">Trend</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#features">Features</a>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#overview">Overview</a>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#team">Team</a>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#pricing">Pricing</a>
+                        </li>
+                        <li class="dropdown dropdown-right">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a target="_blank" href="login.html">Login</a></li>
+                                <li><a target="_blank" href="register.html">Register</a></li>
+                                <li><a href="404.html">Error 404</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
             </div>
-            <div class="col-xl-9 col-lg-9">
-                <div class="top-header">
-                    <div class="row justify-content-end">
-                        <div class="col-xl-8 col-lg-8">
-                            <div class="top-right">
-                                <div class="buttons">
-                                    <a href="#">support</a>
-                                    <a href="register.html"><i class="fas fa-sign-in-alt"></i> signup</a>
-                                </div>
-                                <form class="part-searchBar">
-                                    <input type="text" placeholder="Search Games">
-                                    <button>
-                                        <i class="fas fa-search"></i>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom-header">
-                    <div class="row">
-                        <div class="col-xl-12 col-lg-12">
-                            <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <ul class="navbar-nav ml-auto">
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-3"
-                                                role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                Home
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown-3">
-                                                <a class="dropdown-item" href="index.html">Homepage 01</a>
-                                                <a class="dropdown-item" href="index-2.html">Homepage 02</a>
-                                                <a class="dropdown-item" href="index-3.html">Homepage 03</a>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="about.html">about</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="games.html">Games</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="contest.html">Contest</a>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                                role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                Blog
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="blog.html">Blog Post</a>
-                                                <a class="dropdown-item" href="blog-details.html">Blog Details</a>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2"
-                                                role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                Pages
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                                                <a class="dropdown-item" href="promotion.html">Promotion</a>
-                                                <a class="dropdown-item" href="affiliate-programming.html">Affilite
-                                                    Program</a>
-                                                <a class="dropdown-item" href="game-details.html">Games Details</a>
-                                                <a class="dropdown-item" href="faq.html">Faq</a>
-                                                <a class="dropdown-item" href="account.html">My Account</a>
-                                                <a class="dropdown-item" href="register.html">Register</a>
-                                                <a class="dropdown-item" href="login.html">Login</a>
-                                            </div>
-                                        </li>
+        </nav>
+        <!-- End Navigation -->
 
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="contact.html">Contact</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Banner
+    ============================================= -->
+    <div class="banner-area responsive-top-pad banner-standard text-center auto-height">
+        <!-- Fixed Shape -->
+        <div class="fixed-shape" style="background-image: url(assetsNew/img/shape/15.png);"></div>
+        <div class="shape-right">
+            <img src="assetsNew/img/shape/16.png" alt="Shape">
         </div>
-    </div>
-    <!-- header section end -->
-
-    <!-- banner section begin -->
-    <div class="banner-slider owl-carousel owl-theme">
-        <div class="banner">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-8 col-lg-8 col-sm-8">
-                        <div class="banner-txt">
-                            <h4>Miscoo is a long profeting</h4>
-                            <h1>play free Crypto game in your browser</h1>
-                            <a href="#0" class="def-btn">ASDASDA</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="shape-left">
+            <img src="assetsNew/img/shape/17.png" alt="Shape">
         </div>
-        <div class="banner slide-2">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-8 col-lg-8 col-sm-8">
-                        <div class="banner-txt">
-                            <h4>Miscoo is a long profeting</h4>
-                            <h1> Dogecoin gives away the crypto games</h1>
-                            <a href="#0" class="def-btn">ASDASDA</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="banner slide-3">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-8 col-lg-8 col-sm-8">
-                        <div class="banner-txt">
-                            <h4>Miscoo is a long profeting</h4>
-                            <h1>All Games is a blockchain integrated</h1>
-                            <a href="#0" class="def-btn">ASDASDA</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- banner section end -->
-
-    <!-- about section begin -->
-    <div class="about" id="about">
-
+        <!-- End Fixed Shape -->
         <div class="container">
-            <div class="feature">
-                <div class="row">
-                    <div class="col-xl-3 col-lg-3">
-                        <div class="single-feature">
-                            <div class="part-icon">
-                                <img src="assetsM/img/games/assetsM-1.png" alt="">
-                            </div>
-                            <h4 class="feature-title">
-                                Online Casino
-                            </h4>
-                            <a href="#0" class="def-btn def-small">
-                                Play Now <svg aria-hidden="true" focusable="false" data-prefix="fal"
-                                    data-icon="long-arrow-right" role="img" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 448 512"
-                                    class="svg-inline--fa fa-long-arrow-right fa-w-14 fa-fw fa-2x">
-                                    <path fill="currentColor"
-                                        d="M311.03 131.515l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L387.887 239H12c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h375.887l-83.928 83.444c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l116.485-116c4.686-4.686 4.686-12.284 0-16.971L328 131.515c-4.686-4.687-12.284-4.687-16.97 0z"
-                                        class=""></path>
-                                </svg>
-                            </a>
-                        </div>
+            <div class="content-box">
+                <div class="row align-center">
+                    <div class="col-lg-10 offset-lg-1 info">
+                        <h2 class="wow fadeInDown" data-wow-duration="1s">Sederhanakan Penggajian & Absensi Karyawan
+                            Dalam Satu Dashboard</h2>
+                        <p>Kelola data kehadiran, slip gaji, pajak, dan cuti hanya dalam beberapa klik. Otomatis, cepat,
+                            dan hemat</p>
+                        <a class="btn circle btn-theme theme btn-md" href="#">Mulai Sekarang</a>
                     </div>
-                    <div class="col-xl-3 col-lg-3">
-                        <div class="single-feature">
-                            <div class="part-icon">
-                                <img src="assetsM/img/games/assetsM-3.png" alt="">
-                            </div>
-                            <h4 class="feature-title">
-                                Club Poker
-                            </h4>
-                            <a href="#0" class="def-btn def-small">
-                                Play Now <svg aria-hidden="true" focusable="false" data-prefix="fal"
-                                    data-icon="long-arrow-right" role="img" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 448 512"
-                                    class="svg-inline--fa fa-long-arrow-right fa-w-14 fa-fw fa-2x">
-                                    <path fill="currentColor"
-                                        d="M311.03 131.515l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L387.887 239H12c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h375.887l-83.928 83.444c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l116.485-116c4.686-4.686 4.686-12.284 0-16.971L328 131.515c-4.686-4.687-12.284-4.687-16.97 0z"
-                                        class=""></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3">
-                        <div class="single-feature">
-                            <div class="part-icon">
-                                <img src="assetsM/img/games/assetsM-7.png" alt="">
-                            </div>
-                            <h4 class="feature-title">
-                                Royal casino
-                            </h4>
-                            <a href="#0" class="def-btn def-small">
-                                Play Now <svg aria-hidden="true" focusable="false" data-prefix="fal"
-                                    data-icon="long-arrow-right" role="img" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 448 512"
-                                    class="svg-inline--fa fa-long-arrow-right fa-w-14 fa-fw fa-2x">
-                                    <path fill="currentColor"
-                                        d="M311.03 131.515l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L387.887 239H12c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h375.887l-83.928 83.444c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l116.485-116c4.686-4.686 4.686-12.284 0-16.971L328 131.515c-4.686-4.687-12.284-4.687-16.97 0z"
-                                        class=""></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3">
-                        <div class="single-feature">
-                            <div class="part-icon">
-                                <img src="assetsM/img/games/assetsM-6.png" alt="">
-                            </div>
-                            <h4 class="feature-title">
-                                Slots 375
-                            </h4>
-                            <a href="#0" class="def-btn def-small">
-                                Play Now <svg aria-hidden="true" focusable="false" data-prefix="fal"
-                                    data-icon="long-arrow-right" role="img" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 448 512"
-                                    class="svg-inline--fa fa-long-arrow-right fa-w-14 fa-fw fa-2x">
-                                    <path fill="currentColor"
-                                        d="M311.03 131.515l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L387.887 239H12c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h375.887l-83.928 83.444c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l116.485-116c4.686-4.686 4.686-12.284 0-16.971L328 131.515c-4.686-4.687-12.284-4.687-16.97 0z"
-                                        class=""></path>
-                                </svg>
-                            </a>
+                    <div class="col-lg-8 offset-lg-2 wow fadeInUp" data-wow-duration="1s">
+                        <div class="thumb">
+                            <img src="assetsNew/img/illustration/10.png" alt="Thumb">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <!-- End Banner -->
+
+    <!-- Start Signup
+    ============================================= -->
+    <div class="quick-signup-area text-center bg-gray default-padding">
         <div class="container">
-            <div class="row justify-content-xl-between justify-content-lg-between justify-content-sm-center">
-                <div class="col-xl-4 col-lg-4 col-sm-10 col-md-6">
-                    <div class="part-txt">
-                        <h2>Games are fun with Misco</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipis icing elit. Distinctio architecto nobis totam
-                            odio aliquam repellat quam rem harum alias animi ducimus quibusdam, sint placeat
-                            <span>"omnis dolores odit ipsum ut autem! quam rem harum alias animi ducimus quibusdam, sint
-                                placeat omnis dolores odit ipsum ut autem!"</span>
+            <div class="row align-center">
+
+                <div class="col-lg-8 offset-lg-2">
+                    <h5>Coba Gratis HR & Payroll</h5>
+                    <h2>Mulai Tanpa Biaya, Tanpa Komitmen</h2>
+                    <form action="#">
+                        <input type="text" placeholder="Name" class="form-control">
+                        <input type="email" placeholder="Email" class="form-control">
+                        <button type="submit"> Coba Sekarang</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Signup -->
+
+    <!-- Start Features
+    ============================================= -->
+    <div id="features" class="our-features-area relative default-padding">
+        <!-- Fixed BG -->
+        <div class="fixed-bg" style="background-image: url(assetsNew/img/shape/11.png);"></div>
+        <!-- Fixed BG -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h2 class="area-title">Fitur Unggulan Kami</h2>
+                        <div class="devider"></div>
+                        <p> Kelola penggajian, absensi, cuti, dan data karyawan dalam satu platform HR modern yang mudah
+                            digunakan.
                         </p>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 d-xl-block d-lg-block d-md-none">
-                    <div class="part-img">
-                        <div class="single-img">
-                            <img src="assetsM/img/about-img.jpg" alt="img">
-                            <a href="#" data-video-id="5hhlW_SYJBA" class="js-video-button play-button">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="play"
-                                    role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                                    class="svg-inline--fa fa-play fa-w-14 fa-fw fa-2x">
-                                    <path fill="currentColor"
-                                        d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6zm-16.2 55.1l-352 208C45.6 483.9 32 476.6 32 464V47.9c0-16.3 16.4-18.4 24.1-13.8l352 208.1c10.5 6.2 10.5 21.4.1 27.6z"
-                                        class=""></path>
-                                </svg>
-                            </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="feature-items text-center">
+                <div class="row">
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="icon">
+                                <i class="flaticon-website"></i>
+                            </div>
+                            <div class="info">
+                                <h4>Fleksibel & Bisa Disesuaikan</h4>
+                                <p> Atur sistem sesuai struktur dan kebijakan perusahaan Anda — mulai dari jam kerja,
+                                    shift, hingga format slip gaji.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-sm-10 col-md-6">
-                    <div class="part-txt right">
-                        <h3>So, You should choose it </h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipis icing elit. Distinctio architecto nobis totam
-                            odio aliquam repellat quam rem harum alias animi ducimus quibusdam, sint placeat omnis
-                            dolores odit ipsum ut autem! quam rem harum alias animi ducimus quibusdam, sint placeat
-                            omnis dolores odit ipsum ut autem!</p>
-                        <a href="#0" class="def-btn">learn more</a>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="icon">
+                                <i class="flaticon-integration"></i>
+                            </div>
+                            <div class="info">
+                                <h4>Terintegrasi Otomatis</h4>
+                                <p> Terhubung langsung dengan sistem absensi, pajak, BPJS, dan email untuk memudahkan
+                                    proses HR harian.
+                                </p>
+                            </div>
+                        </div>
                     </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="icon">
+                                <i class="flaticon-rgb-1"></i>
+                            </div>
+                            <div class="info">
+                                <h4>Tampilan Profesional</h4>
+                                <p> Antarmuka modern dan responsif yang ramah untuk admin maupun karyawan, mendukung
+                                    efisiensi kerja tim.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="icon">
+                                <i class="flaticon-resolution-1"></i>
+                            </div>
+                            <div class="info">
+                                <h4>Visual Bersih & Responsif</h4>
+                                <p> Desain antarmuka ringan, cepat, dan tajam di semua perangkat — desktop maupun
+                                    mobile.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="icon">
+                                <i class="flaticon-drag"></i>
+                            </div>
+                            <div class="info">
+                                <h4>Mudah Digunakan</h4>
+                                <p> Navigasi intuitif, input data cepat, dan proses hanya dalam beberapa klik. Cocok
+                                    untuk semua level pengguna.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="icon">
+                                <i class="flaticon-showcase"></i>
+                            </div>
+                            <div class="info">
+                                <h4>Laporan & Dashboard Real-time</h4>
+                                <p> Pantau performa tim, kehadiran, dan biaya gaji secara langsung melalui dashboard
+                                    yang interaktif dan informatif.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- about section end -->
+    <!-- End Our Features -->
 
-    <!-- iq feature begin -->
-    <div class="iq-feature" id="feature">
+    <!-- Start Why Choose Us
+    ============================================= -->
+    <div class="chooseus-area inc-technology relative left-border bg-gray default-padding-top">
         <div class="container">
-            <div class="row justify-content-xl-end justify-content-lg-end justify-content-sm-center">
-                <div class="col-xl-5 col-lg-6 col-sm-10 col-md-7 d-xl-flex d-lg-flex d-block align-items-center">
-                    <div class="part-text">
-                        <h2>Use IQN easily in Misco</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi iusto, fuga consequuntur
-                            laudantium porro suscipit minima, delectus commodi possimus animi nesciunt neque hic fugiat.
-                            Alias sequi consectetur voluptate voluptatum quaerat.</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam reprehenderit molestiae in,
-                            illo similique.</p>
-                        <a href="#0" class="def-btn">play now</a>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-5 col-sm-10 col-md-5 offset-xl-1 offset-lg-1 offset-0">
-                    <div class="part-img">
-                        <img src="assetsM/img/iq-img.jpg" alt="">
-                        <div class="part-video">
-                            <a href="#" data-video-id="5hhlW_SYJBA" class="js-video-button play-button">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="play"
-                                    role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                                    class="svg-inline--fa fa-play fa-w-14 fa-fw fa-2x">
-                                    <path fill="currentColor"
-                                        d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6zm-16.2 55.1l-352 208C45.6 483.9 32 476.6 32 464V47.9c0-16.3 16.4-18.4 24.1-13.8l352 208.1c10.5 6.2 10.5 21.4.1 27.6z"
-                                        class=""></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="part-features">
-                <div class="row justify-content-sm-center justify-content-md-start">
-                    <div class="col-xl-4 col-lg-4 col-sm-10 col-md-6">
-                        <div class="single-feature">
-                            <img class="icon" src="assetsM/img/svg/money-exchange.svg" alt="">
-                            <h3 class="title">Trading Exchanges</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-sm-10 col-md-6">
-                        <div class="single-feature">
-                            <img class="icon" src="assetsM/img/svg/wallet.svg" alt="">
-                            <h3 class="title">Crypto Wallets</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-sm-10 col-md-6">
-                        <div class="single-feature">
-                            <img class="icon" src="assetsM/img/svg/analytics.svg" alt="">
-                            <h3 class="title">Portfolio & Trackers</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- iq feature end -->
-
-    <!-- game begin -->
-    <div class="games" id="games">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-7 col-sm-10">
-                    <div class="section-title style-2">
-                        <h2>thousands of free online games</h2>
-                        <p>Misco has thousands of free online games for all generation. Play action, racing, sports, and
-                            other fun games for free at Misco</p>
-                    </div>
-                </div>
-            </div>
             <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-4">
-                    <div class="game-menu">
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#0">
-                                    <span class="icon icon-1">s</span>
-                                    <span class="text">All Genres</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#0">
-                                    <span class="icon icon-2"><img src="assetsM/img/svg/casino.svg"
-                                            alt=""></span>
-                                    <span class="text">Slots</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#0">
-                                    <span class="icon icon-3"></span>
-                                    <span class="text">Mega Matrix</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#0">
-                                    <span class="icon icon-4"></span>
-                                    <span class="text">Casino & Poker</span>
-                                </a>
-                            </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="#0">
-                                    <span class="icon icon-5">
-                                        <img src="assetsM/img/svg/power-ball.svg" alt="">
-                                    </span>
-                                    <span class="text">Lottery</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#0">
-                                    <span class="icon icon-6">
-                                        <img src="assetsM/img/svg/jackpot.svg" alt="">
-                                    </span>
-                                    <span class="text">Jackpot Slots</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#0">
-                                    <span class="icon icon-7"></span>
-                                    <span class="text">Trending Now</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#0">
-                                    <span class="icon icon-8"></span>
-                                    <span class="text">New Release</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#0">
-                                    <span class="icon icon-9"></span>
-                                    <span class="text">Most Popular</span>
-                                </a>
-                            </li>
-                        </ul>
+
+                <div class="info col-lg-6">
+                    <h5>MENGAPA MEMILIH KAMI?</h5>
+                    <h2 class="area-title">Bangun Sistem HR & Payroll dengan Tim Berpengalaman</h2>
+                    <ul class="mb-5">
+                        <li>
+                            <h5>Proses Implementasi Cepat</h5>
+                            <p> Setup mudah dan cepat tanpa mengganggu aktivitas perusahaan. Tim kami siap bantu dari
+                                awal hingga siap digunakan.
+                            </p>
+                        </li>
+                        <li>
+                            <h5>Tim Profesional & Berdedikasi</h5>
+                            <p> Kami memiliki tim support dan teknisi yang berpengalaman dalam implementasi sistem HR di
+                                berbagai skala perusahaan.
+                            </p>
+                        </li>
+                        <li>
+                            <h5>Dukungan 24/7</h5>
+                            <p> Tim kami siap membantu kapan pun Anda butuh, termasuk saat masa implementasi, pelatihan,
+                                dan maintenance.
+                            </p>
+                        </li>
+                    </ul>
+                    {{-- <div class="technology">
+                        <h4>Teknologi yang Kami Gunakan</h4>
+                        <div class="icon">
+                            <i class="fab fa-java"></i>
+                            <i class="fab fa-node-js"></i>
+                            <i class="fab fa-php"></i>
+                            <i class="fab fa-python"></i>
+                            <i class="fab fa-mailchimp"></i>
+                        </div>
+                    </div> --}}
+                </div>
+
+
+                <div class="thumb width-120 col-lg-6">
+                    <img src="assetsNew/img/illustration/6.png" alt="Thumb">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Choose us Area -->
+
+    <!-- Start Overview
+    ============================================= -->
+    <div id="overview" class="overview-area overflow-hidden default-padding-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h2 class="area-title">Sekilas Tentang Sistem Kami</h2>
+                        <div class="devider"></div>
+                        <p> Satu platform lengkap untuk mempermudah operasional HR dan penggajian Anda. Kolaboratif,
+                            fleksibel, dan siap disesuaikan dengan kebutuhan perusahaan.
+                        </p>
                     </div>
                 </div>
-                <div class="col-xl-9 col-lg-9 col-md-8">
-                    <div class="all-games anim-change">
+            </div>
+        </div>
+        <div class="container">
+            <div class="overview-items mb-5">
+                <div class="col-lg-12">
+                    <div id="tabsContent" class="tab-content wow fadeInUp" data-wow-delay="0.5s">
+                        <div id="tab1" class="tab-pane fade active show">
+                            <div class="thumb">
+                                <img src="assetsNew/img/2440x1578.png" alt="Thumb">
+                                <div class="overlay">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab2" class="tab-pane fade">
+                            <div class="thumb">
+                                <img src="assetsNew/img/2440x1578.png" alt="Thumb">
+                            </div>
+                        </div>
+                        <div id="tab3" class="tab-pane fade">
+                            <div class="thumb">
+                                <img src="assetsNew/img/2440x1578.png" alt="Thumb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Overview -->
+
+    <!-- Start Pricing Area
+    ============================================= -->
+    <div id="pricing" class="pricing-area default-padding-top bottom-less">
+        <div class="shape-top">
+            <img src="assetsNew/img/shape/9.png" alt="Shape">
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading light text-center">
+                        <h2 class="area-title">Paket Berlangganan Kami</h2>
+                        <div class="devider"></div>
+                        <p>
+                            Pilih paket yang sesuai dengan kebutuhan perusahaan Anda. Semua fitur penting, tanpa biaya
+                            tersembunyi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing text-center">
+                <div class="row">
+
+                    <!-- Starter -->
+                    <div class="col-lg-4 col-md-6 single-item d-flex">
+                        <div
+                            class="pricing-item w-100 d-flex flex-column justify-content-between align-items-center text-center p-4 border rounded-5">
+                            <div>
+
+                                <ul class="list-unstyled mt-3">
+                                    <li class="pricing-header">
+                                        <h4>Starter</h4>
+                                        <h3><sup>Rp</sup> 0 <sub>/ Bulan</sub></h3>
+                                    </li>
+                                    <li><i class="fas fa-check-circle"></i>10 Karyawan</li>
+                                    <li><i class="fas fa-check-circle"></i>Absensi Online</li>
+                                    <li><i class="fas fa-check-circle"></i>Slip Gaji Manual</li>
+                                    <li><i class="fas fa-check-circle"></i>Pengelolaan Karyawan</li>
+                                    <li class="text-danger"><i class="fas fa-minus-circle"></i>Tidak Ada Dukungan
+                                        Teknis</li>
+                                    <li class="text-danger"><i class="fas fa-minus-circle"></i>Tidak Ada Integrasi
+                                        Pajak</li>
+                                </ul>
+                            </div>
+                            <div class="mt-4">
+                                <a class="btn circle btn-theme border btn-sm" href="#">Coba Gratis</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pro -->
+                    <div class="col-lg-4 col-md-6 single-item d-flex">
+                        <div
+                            class="pricing-item w-100 d-flex flex-column justify-content-between align-items-center text-center p-4 border rounded-5">
+                            <div>
+                                <ul class="list-unstyled mt-3">
+                                    <li class="pricing-header">
+                                        <h4>Pro</h4>
+                                        <h3><sup>Rp</sup> 249.000 <sub>/ Bulan</sub></h3>
+                                    </li>
+                                    <li><i class="fas fa-check-circle"></i> Semua fitur Starter</li>
+                                    <li><i class="fas fa-check-circle"></i> Hingga 50 Karyawan</li>
+                                    <li><i class="fas fa-check-circle"></i> Penggajian Otomatis</li>
+                                    <li><i class="fas fa-check-circle"></i> Pengajuan Cuti & Izin</li>
+                                    <li><i class="fas fa-check-circle"></i> Jadwal & Shift Kerja</li>
+                                    <li><i class="fas fa-check-circle"></i> Dukungan via Email</li>
+                                    <li><i class="fas fa-check-circle"></i> Laporan Payroll Bulanan</li>
+                                </ul>
+                            </div>
+                            <div class="mt-4">
+                                <a class="btn circle btn-theme effect btn-sm" href="#">Langganan Pro</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Enterprise -->
+                    <div class="col-lg-4 col-md-6 single-item d-flex">
+                        <div
+                            class="pricing-item w-100 d-flex flex-column justify-content-between align-items-center text-center p-4 border rounded-5">
+                            <div>
+                                <ul class="list-unstyled mt-3">
+                                    <li class="pricing-header">
+                                        <h4>Enterprise</h4>
+                                        <h3><sup>Rp</sup> 599.000 <sub>/ Bulan</sub></h3>
+                                    </li>
+                                    <li><i class="fas fa-check-circle"></i> Semua fitur Pro</li>
+                                    <li><i class="fas fa-check-circle"></i> Jumlah Karyawan Tanpa Batas</li>
+                                    <li><i class="fas fa-check-circle"></i> Integrasi Fingerprint / Face ID</li>
+                                    <li><i class="fas fa-check-circle"></i> Approval Berjenjang</li>
+                                    <li><i class="fas fa-check-circle"></i> SLA Support (Email + WhatsApp)</li>
+                                    <li><i class="fas fa-check-circle"></i> Kustomisasi Modul (Add-on)</li>
+                                </ul>
+                            </div>
+                            <div class="mt-4">
+                                <a class="btn circle btn-theme border btn-sm" href="#">Hubungi Kami</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Pricing Area -->
+
+    <!-- Star Faq
+    ============================================= -->
+    <div class="faq-area default-padding-top mb-5">
+        <div class="container">
+            <div class="faq-items">
+                <div class="row align-center">
+
+                    <div class="col-lg-6">
+                        <div class="thumb wow fadeInLeft" data-wow-delay="0.5s">
+                            <img src="assetsNew/img/illustration/9.png" alt="Thumb">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="faq-content">
+                            <h2 class="area-title">Pertanyaan & Jawaban</h2>
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h4 class="mb-0" data-toggle="collapse" data-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            Apa itu sistem payroll otomatis?
+                                        </h4>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p> Sistem payroll otomatis adalah solusi digital untuk menghitung gaji,
+                                                tunjangan, potongan pajak, BPJS, dan absensi karyawan secara otomatis
+                                                dan akurat. Sistem ini mengurangi risiko kesalahan manual dan menghemat
+                                                waktu kerja tim HR.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h4 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Apakah sistem ini cocok untuk perusahaan kecil (UMKM)?
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p> Ya, sistem kami didesain fleksibel untuk semua skala usaha. Bahkan paket
+                                                Starter bisa digunakan oleh UMKM tanpa biaya tambahan dan tetap bisa
+                                                mencatat absensi dan gaji dasar.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingFour">
+                                        <h4 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            Apakah bisa mengatur shift kerja dan jam lembur?
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p> Bisa. Sistem kami mendukung pengaturan shift fleksibel, multi lokasi,
+                                                serta perhitungan otomatis lembur sesuai kebijakan perusahaan dan
+                                                peraturan pemerintah.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingFive">
+                                        <h4 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseFive"
+                                            aria-expanded="false" aria-controls="collapseFive">
+                                            Apakah data aman dan terenkripsi?
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p> Ya, keamanan adalah prioritas kami. Semua data disimpan dengan enkripsi
+                                                standar industri (AES-256), backup harian, serta autentikasi pengguna
+                                                berlapis (multi-factor authentication opsional).
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingSix">
+                                        <h4 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseSix"
+                                            aria-expanded="false" aria-controls="collapseSix">
+                                            Apakah bisa integrasi dengan fingerprint atau aplikasi absensi lainnya?
+                                        </h4>
+                                    </div>
+                                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p> Bisa. Kami juga support integrasi dengan alat absensi seperti
+                                                Fingerprint, Face Recognition, dan Mobile GPS
+                                                Check-In.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingSeven">
+                                        <h4 class="mb-0 collapsed" data-toggle="collapse"
+                                            data-target="#collapseSeven" aria-expanded="false"
+                                            aria-controls="collapseSeven">
+                                            Bagaimana proses onboarding dan training pengguna baru?
+                                        </h4>
+                                    </div>
+                                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p> Setelah mendaftar, tim kami akan membantu proses implementasi, migrasi
+                                                data awal, dan memberikan training gratis melalui Zoom atau panduan
+                                                video yang sudah disiapkan.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingEight">
+                                        <h4 class="mb-0 collapsed" data-toggle="collapse"
+                                            data-target="#collapseEight" aria-expanded="false"
+                                            aria-controls="collapseEight">
+                                            Apakah tersedia dukungan teknis jika mengalami kendala?
+                                        </h4>
+                                    </div>
+                                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p> Tentu. Kami menyediakan SLA Support melalui Email & WhatsApp.
+                                                Untuk paket Pro dan Enterprise, tersedia bantuan langsung dari tim
+                                                support dalam jam kerja dan opsi prioritas.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingNine">
+                                        <h4 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseNine"
+                                            aria-expanded="false" aria-controls="collapseNine">
+                                            Apakah sistem ini patuh terhadap regulasi pajak dan ketenagakerjaan
+                                            Indonesia?
+                                        </h4>
+                                    </div>
+                                    <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p> Ya. Sistem kami selalu diperbarui sesuai aturan dari BPJS, PPh21, dan
+                                                regulasi Ketenagakerjaan terbaru di Indonesia. Anda bisa mencetak bukti
+                                                potong pajak dan laporan bulanan secara otomatis.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Faq -->
+
+    <!-- Start Testimonials
+    ============================================= -->
+    {{-- <div class="testimonials-area default-padding">
+
+        <!-- Fixed BG -->
+        <div class="fixed-bg" style="background-image: url(assetsNew/img/map.svg);"></div>
+        <!-- Fixed BG -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h2 class="area-title">Customers Review</h2>
+                        <div class="devider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="testimonial-items text-center">
+                        <div class="carousel slide" data-ride="carousel" id="testimonial-carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <i class="flaticon-left-quotes-sign"></i>
+                                    <p>
+                                        Instrument or do connection no appearance do invitation. Dried quick round it or
+                                        order. Add past see west felt did any. Say out noise you taste merry.
+                                    </p>
+                                    <span>CEO of Sasoft</span>
+                                    <h4>Junl Sarukh</h4>
+                                </div>
+                                <div class="carousel-item">
+                                    <i class="flaticon-left-quotes-sign"></i>
+                                    <p>
+                                        Instrument or do connection no appearance do invitation. Dried quick round it or
+                                        order. Add past see west felt did any. Say out noise you taste merry.
+                                    </p>
+                                    <span>Director of Sasoft</span>
+                                    <h4>Anil Spia</h4>
+                                </div>
+                                <div class="carousel-item">
+                                    <i class="flaticon-left-quotes-sign"></i>
+                                    <p>
+                                        Instrument or do connection no appearance do invitation. Dried quick round it or
+                                        order. Add past see west felt did any. Say out noise you taste merry.
+                                    </p>
+                                    <span>Developer of Sasoft</span>
+                                    <h4>Paul Munni</h4>
+                                </div>
+                            </div>
+                            <!-- End Carousel Content -->
+
+                            <!-- Carousel Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#testimonial-carousel" data-slide-to="0" class="active">
+                                    <img src="assetsNew/img/800x800.png" alt="Thumb">
+                                </li>
+                                <li data-target="#testimonial-carousel" data-slide-to="1">
+                                    <img src="assetsNew/img/800x800.png" alt="Thumb">
+                                </li>
+                                <li data-target="#testimonial-carousel" data-slide-to="2">
+                                    <img src="assetsNew/img/800x800.png" alt="Thumb">
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> --}}
+    <!-- End Testimonials -->
+
+    <!-- Start Blog
+    ============================================= -->
+    {{-- <div id="blog" class="blog-area default-padding bg-gray bottom-less">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h2 class="area-title">Latest News</h2>
+                        <div class="devider"></div>
+                        <p>
+                            Outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be
+                            as it curiosity departure ourselves very extreme future.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+
+                <!-- Single Item -->
+                <div class="single-item col-lg-4 col-md-6">
+                    <div class="item">
+                        <div class="thumb">
+                            <a href="#"><img src="assetsNew/img/800x600.png" alt="Thumb"></a>
+                            <div class="date">12 Dec, 2020</div>
+                        </div>
+                        <div class="info">
+                            <div class="meta">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fas fa-user"></i> Admin</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fas fa-comments"></i> 12 Comments</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h4>
+                                <a href="#">Overcame breeding or my concerns removing. </a>
+                            </h4>
+                            <p>
+                                Ecstatic advanced and procured civility not absolute put continue. Overcame breeding or
+                                my concerns removing desirous .
+                            </p>
+                            <a href="#" class="btn-simple"><i class="fas fa-angle-right"></i> Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+                <!-- Single Item -->
+                <div class="single-item col-lg-4 col-md-6">
+                    <div class="item">
+                        <div class="thumb">
+                            <a href="#"><img src="assetsNew/img/800x600.png" alt="Thumb"></a>
+                            <div class="date">16 Aug, 2020</div>
+                        </div>
+                        <div class="info">
+                            <div class="meta">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fas fa-user"></i> Admin</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fas fa-comments"></i> 25 Comments</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h4>
+                                <a href="#">Made neat an on be gave show snug tore.</a>
+                            </h4>
+                            <p>
+                                Ecstatic advanced and procured civility not absolute put continue. Overcame breeding or
+                                my concerns removing desirous .
+                            </p>
+                            <a href="#" class="btn-simple"><i class="fas fa-angle-right"></i> Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+                <!-- Single Item -->
+                <div class="single-item col-lg-4 col-md-6">
+                    <div class="item">
+                        <div class="thumb">
+                            <a href="#"><img src="assetsNew/img/800x600.png" alt="Thumb"></a>
+                            <div class="date">28 Nov, 2020</div>
+                        </div>
+                        <div class="info">
+                            <div class="meta">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fas fa-user"></i> Admin</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fas fa-comments"></i> 25 Comments</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h4>
+                                <a href="#">Assurance concluded son something depending</a>
+                            </h4>
+                            <p>
+                                Ecstatic advanced and procured civility not absolute put continue. Overcame breeding or
+                                my concerns removing desirous .
+                            </p>
+                            <a href="#" class="btn-simple"><i class="fas fa-angle-right"></i> Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+
+            </div>
+        </div>
+    </div> --}}
+    <!-- End Blog -->
+
+    <!-- Start Contact
+    ============================================= -->
+    {{-- <div id="contact" class="contact-area default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 maps">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14767.262289338461!2d70.79414485000001!3d22.284975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424308883981"></iframe>
+                </div>
+                <div class="col-lg-5 contact-forms">
+                    <h2 class="area-title">We’d love to hear from <br> you anytime</h2>
+                    <form action="assetsNew/mail/contact.php" method="POST" class="contact-form">
                         <div class="row">
-                            <div class="col-xl-4 col-lg-4 col-sm-6">
-                                <div class="single-game">
-                                    <div class="part-img">
-                                        <img src="assetsM/img/games/assetsM-1.jpg" alt="">
-                                        <img class="icon-img" src="assetsM/img/games/icon-1.png" alt="">
-                                    </div>
-                                    <div class="part-text">
-                                        <h4 class="game-title">
-                                            IceBall 71
-                                        </h4>
-                                        <a href="#0" class="def-btn def-small">Play Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-sm-6">
-                                <div class="single-game">
-                                    <div class="part-img">
-                                        <img src="assetsM/img/games/assetsM-2.jpg" alt="">
-                                        <img class="icon-img" src="assetsM/img/games/icon-2.png" alt="">
-                                    </div>
-                                    <div class="part-text">
-                                        <h4 class="game-title">
-                                            IceBall 71
-                                        </h4>
-                                        <a href="#0" class="def-btn def-small">Play Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-sm-6">
-                                <div class="single-game">
-                                    <div class="part-img">
-                                        <img src="assetsM/img/games/assetsM-3.jpg" alt="">
-                                        <img class="icon-img" src="assetsM/img/games/icon-5.png" alt="">
-                                    </div>
-                                    <div class="part-text">
-                                        <h4 class="game-title">
-                                            IceBall 71
-                                        </h4>
-                                        <a href="#0" class="def-btn def-small">Play Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-sm-6">
-                                <div class="single-game">
-                                    <div class="part-img">
-                                        <img src="assetsM/img/games/assetsM-4.jpg" alt="">
-                                        <img class="icon-img" src="assetsM/img/games/icon-3.png" alt="">
-                                    </div>
-                                    <div class="part-text">
-                                        <h4 class="game-title">
-                                            IceBall 71
-                                        </h4>
-                                        <a href="#0" class="def-btn def-small">Play Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-sm-6">
-                                <div class="single-game">
-                                    <div class="part-img">
-                                        <img src="assetsM/img/games/assetsM-5.jpg" alt="">
-                                        <img class="icon-img" src="assetsM/img/games/icon-4.png" alt="">
-                                    </div>
-                                    <div class="part-text">
-                                        <h4 class="game-title">
-                                            IceBall 71
-                                        </h4>
-                                        <a href="#0" class="def-btn def-small">Play Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-sm-6">
-                                <div class="single-game">
-                                    <div class="part-img">
-                                        <img src="assetsM/img/games/assetsM-6.jpg" alt="">
-                                        <img class="icon-img" src="assetsM/img/games/icon-6.png" alt="">
-                                    </div>
-                                    <div class="part-text">
-                                        <h4 class="game-title">
-                                            IceBall 71
-                                        </h4>
-                                        <a href="#0" class="def-btn def-small">Play Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-sm-6">
-                                <div class="single-game">
-                                    <div class="part-img">
-                                        <img src="assetsM/img/games/assetsM-9.jpg" alt="">
-                                        <img class="icon-img" src="assetsM/img/games/icon-2.png" alt="">
-                                    </div>
-                                    <div class="part-text">
-                                        <h4 class="game-title">
-                                            IceBall 71
-                                        </h4>
-                                        <a href="#0" class="def-btn def-small">Play Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-sm-6">
-                                <div class="single-game">
-                                    <div class="part-img">
-                                        <img src="assetsM/img/games/assetsM-8.jpg" alt="">
-                                        <img class="icon-img" src="assetsM/img/games/icon-5.png" alt="">
-                                    </div>
-                                    <div class="part-text">
-                                        <h4 class="game-title">
-                                            IceBall 71
-                                        </h4>
-                                        <a href="#0" class="def-btn def-small">Play Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-sm-6">
-                                <div class="single-game">
-                                    <div class="part-img">
-                                        <img src="assetsM/img/games/assetsM-7.jpg" alt="">
-                                        <img class="icon-img" src="assetsM/img/games/icon-1.png" alt="">
-                                    </div>
-                                    <div class="part-text">
-                                        <h4 class="game-title">
-                                            IceBall 71
-                                        </h4>
-                                        <a href="#0" class="def-btn def-small">Play Now</a>
-                                    </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <i class="fas fa-user"></i>
+                                    <input class="form-control" id="name" name="name" placeholder="Name"
+                                        type="text">
+                                    <span class="alert-error"></span>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <i class="fas fa-envelope"></i>
+                                    <input class="form-control" id="email" name="email" placeholder="Email*"
+                                        type="email">
+                                    <span class="alert-error"></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <i class="fas fa-phone"></i>
+                                    <input class="form-control" id="phone" name="phone" placeholder="Phone"
+                                        type="text">
+                                    <span class="alert-error"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group comments">
+                                    <i class="fas fa-edit"></i>
+                                    <textarea class="form-control" id="comments" name="comments" placeholder="Tell Us About Project *"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <button type="submit" name="submit" id="submit">
+                                    Send Message <i class="fa fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Alert Message -->
+                        <div class="col-lg-12 alert-notification">
+                            <div id="message" class="alert-msg"></div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- game end -->
+    </div> --}}
+    <!-- End Contact -->
 
-    <!-- recent activity begin -->
-    <div class="recent-activity">
+    <!-- Start Footer
+    ============================================= -->
+    <footer class="bg-dark text-light">
+        <!-- Shape -->
+        <div class="footer-shape">
+            <img src="assetsNew/img/shape/4.png" alt="Shape">
+        </div>
+        <!-- Shape -->
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-7 col-sm-10">
-                    <div class="section-title">
-                        <h2>Our recent mobility</h2>
-                        <p>Misco has thousands of free online games for all generation. Play action, racing, sports, and
-                            other fun games for free at Misco</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-4 col-lg-4">
-                    <div class="single-col">
-                        <h3 class="title">
-                            Our latest winners
-                        </h3>
-                        <div class="activity-list">
-                            <div class="row">
-                                <div class="col-xl-12 col-lg-12 col-md-6">
-                                    <div class="single-activity">
-                                        <div class="part-img">
-                                            <img src="assetsM/img/games/assetsM-1.jpg" alt="">
-                                        </div>
-                                        <div class="part-text">
-                                            <p><span class="player-name">Mukta</span> won 2 minutes ago<br> on game of
-                                                <a href="#0" class="game-name">Mega Matrix</a>
-                                            </p>
-                                            <span class="winning-amount">$42.02</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-6">
-                                    <div class="single-activity">
-                                        <div class="part-img">
-                                            <img src="assetsM/img/games/assetsM-2.jpg" alt="">
-                                        </div>
-                                        <div class="part-text">
-                                            <p><span class="player-name">Shehwar</span> won 2 minutes ago<br> on game
-                                                of <a href="#0" class="game-name">Royal Casino</a></p>
-                                            <span class="winning-amount">$35.20</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-6">
-                                    <div class="single-activity">
-                                        <div class="part-img">
-                                            <img src="assetsM/img/games/assetsM-3.jpg" alt="">
-                                        </div>
-                                        <div class="part-text">
-                                            <p><span class="player-name">Maria</span> won 2 minutes ago<br> on game of
-                                                <a href="#0" class="game-name">Poker Club</a>
-                                            </p>
-                                            <span class="winning-amount">$21.41</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-6">
-                                    <div class="single-activity">
-                                        <div class="part-img">
-                                            <img src="assetsM/img/games/assetsM-4.jpg" alt="">
-                                        </div>
-                                        <div class="part-text">
-                                            <p><span class="player-name">Drubo</span> won 2 minutes ago<br> on game of
-                                                <a href="#0" class="game-name">Slots 375</a>
-                                            </p>
-                                            <span class="winning-amount">$10.50</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4">
-                    <div class="single-col">
-                        <h3 class="title">
-                            Jackpot trigger wins
-                        </h3>
-                        <div class="activity-list jackpot-triggers-win">
-                            <div class="row">
-                                <div class="col-xl-12 col-lg-12 col-md-6">
-                                    <div class="single-activity">
-                                        <div class="part-img">
-                                            <img src="assetsM/img/games/assetsM-3.jpg" alt="">
-                                        </div>
-                                        <div class="part-text">
-                                            <span class="winning-amount">$4,500.05</span>
-                                            <p>Player ID: <span class="player-name">Mukta</span> <br> Game: <a
-                                                    href="#0" class="game-name">Jackpot Club</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-6">
-                                    <div class="single-activity">
-                                        <div class="part-img">
-                                            <img src="assetsM/img/games/assetsM-3.jpg" alt="">
-                                        </div>
-                                        <div class="part-text">
-                                            <span class="winning-amount">$3,505.30</span>
-                                            <p>Player ID: <span class="player-name">Sraddha</span> <br> Game: <a
-                                                    href="#0" class="game-name">Jackpot Club</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-6">
-                                    <div class="single-activity">
-                                        <div class="part-img">
-                                            <img src="assetsM/img/games/assetsM-3.jpg" alt="">
-                                        </div>
-                                        <div class="part-text">
-                                            <span class="winning-amount">$2,100.11</span>
-                                            <p>Player ID: <span class="player-name">Anushka</span> <br> Game: <a
-                                                    href="#0" class="game-name">Jackpot Club</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-6">
-                                    <div class="single-activity">
-                                        <div class="part-img">
-                                            <img src="assetsM/img/games/assetsM-3.jpg" alt="">
-                                        </div>
-                                        <div class="part-text">
-                                            <span class="winning-amount">$1,002.02</span>
-                                            <p>Player ID: <span class="player-name">Genelia</span> <br> Game: <a
-                                                    href="#0" class="game-name">Jackpot Club</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4">
-                    <div class="single-col">
-                        <h3 class="title">
-                            All Time Top Winners
-                        </h3>
-                        <div class="activity-list top-winner">
-                            <div class="row">
-                                <div class="col-xl-12 col-lg-12 col-md-6">
-                                    <div class="single-activity">
-                                        <div class="part-img">
-                                            <img src="assetsM/img/user-icon/icon-1.png" alt="">
-                                        </div>
-                                        <div class="part-text">
-                                            <p>Name: <span class="player-name">Mukta Martin</span> <br> Game: <a
-                                                    href="#0" class="game-name">Mega Matrix</a></p>
-                                            <span class="winning-amount">$4,200.02</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-6">
-                                    <div class="single-activity">
-                                        <div class="part-img">
-                                            <img src="assetsM/img/user-icon/icon-2.png" alt="">
-                                        </div>
-                                        <div class="part-text">
-                                            <p><span class="player-name">Mukta</span> won 2 minutes ago<br> on game of
-                                                <a href="#0" class="game-name">Mega Matrix</a>
-                                            </p>
-                                            <span class="winning-amount">$3,500.20</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-6">
-                                    <div class="single-activity">
-                                        <div class="part-img">
-                                            <img src="assetsM/img/user-icon/icon-3.png" alt="">
-                                        </div>
-                                        <div class="part-text">
-                                            <p><span class="player-name">Mukta</span> won 2 minutes ago<br> on game of
-                                                <a href="#0" class="game-name">Mega Matrix</a>
-                                            </p>
-                                            <span class="winning-amount">$2,100.41</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-6">
-                                    <div class="single-activity">
-                                        <div class="part-img">
-                                            <img src="assetsM/img/user-icon/icon-4.png" alt="">
-                                        </div>
-                                        <div class="part-text">
-                                            <p><span class="player-name">Mukta</span> won 2 minutes ago<br> on game of
-                                                <a href="#0" class="game-name">Mega Matrix</a>
-                                            </p>
-                                            <span class="winning-amount">$1,000.50</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- recent activity end -->
-
-    <!-- cta begin -->
-    <div class="cta">
-        <div class="container">
-            <div class="row justify-content-xl-between justify-content-lg-between justify-content-sm-center">
-                <div class="col-xl-7 col-lg-7 col-md-8 col-sm-10">
-                    <h2>Miscoo - Where everything are<br> possible with crypto gaming</h2>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-10">
-                    <a href="#0" class="def-btn play-now-btn">Play Now</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- cta end -->
-
-    <!-- latest summury begin -->
-    <div class="latest-summury">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-7 col-sm-10">
-                    <div class="section-title style-2">
-                        <h2>Latest Bets summery</h2>
-                        <p>Misco has thousands of free online games for all generation. Play action, racing, sports, and
-                            other fun games for free at Misco</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-3 col-lg-3">
-                    <div class="game-menu">
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#0">
-                                    <span class="icon icon-1">s</span>
-                                    <span class="text">All Bets</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#0">
-                                    <span class="icon icon-2"><img src="assetsM/img/svg/casino.svg"
-                                            alt=""></span>
-                                    <span class="text">High Rolls</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#0">
-                                    <span class="icon icon-3"></span>
-                                    <span class="text">Statics</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#0">
-                                    <span class="icon icon-4"></span>
-                                    <span class="text">Top Players</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-9 col-lg-9">
-                    <div class="all-bets">
-                        <!-- <div class="row">
-                            <div class="col-xl-4 col-lg-4 col-sm-6">
-                                <div class="single-result">
-                                    <div class="part-top">
-                                        <div class="user-img">
-                                            <img src="assetsM/img/games/assetsM-7.jpg" alt="">
-                                        </div>
-                                        <div class="part-info">
-                                            <span class="name">Nilidiano Junior</span>
-                                            <span class="bet-id">Bet ID : 32,156,52</span>
-                                            <span class="game">Mega Matrix</span>
-                                        </div>
-                                    </div>
-                                    <div class="part-bottom">
-                                        <ul>
-                                            <li>
-                                                <span class="title">Coin:</span>
-                                                <span class="descr">BTC</span>
-                                            </li>
-                                            <li>
-                                                <span class="title">Bet:</span>
-                                                <span class="descr">0.1500</span>
-                                            </li>
-                                            <li>
-                                                <span class="title">Win:</span>
-                                                <span class="descr">0.1750</span>
-                                            </li>
-                                            <li>
-                                                <span class="title">Profit</span>
-                                                <span class="descr">0.0250</span>
-                                            </li>
-                                            <li>
-                                                <span class="title">Payout</span>
-                                                <span class="descr">2.0x</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-sm-6">
-                                <div class="single-result">
-                                    <div class="part-top">
-                                        <div class="user-img">
-                                            <img src="assetsM/img/games/assetsM-2.jpg" alt="">
-                                        </div>
-                                        <div class="part-info">
-                                            <span class="name">Mukta Marten</span>
-                                            <span class="bet-id">Bet ID : 32,156,52</span>
-                                            <span class="game">Royal Casino</span>
-                                        </div>
-                                    </div>
-                                    <div class="part-bottom">
-                                        <ul>
-                                            <li>
-                                                <span class="title">Coin:</span>
-                                                <span class="descr">BTC</span>
-                                            </li>
-                                            <li>
-                                                <span class="title">Bet:</span>
-                                                <span class="descr">0.1500</span>
-                                            </li>
-                                            <li>
-                                                <span class="title">Win:</span>
-                                                <span class="descr">0.1750</span>
-                                            </li>
-                                            <li>
-                                                <span class="title">Profit</span>
-                                                <span class="descr">0.0250</span>
-                                            </li>
-                                            <li>
-                                                <span class="title">Payout</span>
-                                                <span class="descr">2.0x</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-sm-6">
-                                <div class="single-result">
-                                    <div class="part-top">
-                                        <div class="user-img">
-                                            <img src="assetsM/img/games/assetsM-3.jpg" alt="">
-                                        </div>
-                                        <div class="part-info">
-                                            <span class="name">Saif Al huda</span>
-                                            <span class="bet-id">Bet ID : 32,156,52</span>
-                                            <span class="game">Poker Club</span>
-                                        </div>
-                                    </div>
-                                    <div class="part-bottom">
-                                        <ul>
-                                            <li>
-                                                <span class="title">Coin:</span>
-                                                <span class="descr">BTC</span>
-                                            </li>
-                                            <li>
-                                                <span class="title">Bet:</span>
-                                                <span class="descr">0.1500</span>
-                                            </li>
-                                            <li>
-                                                <span class="title">Win:</span>
-                                                <span class="descr">0.1750</span>
-                                            </li>
-                                            <li>
-                                                <span class="title">Profit</span>
-                                                <span class="descr">0.0250</span>
-                                            </li>
-                                            <li>
-                                                <span class="title">Payout</span>
-                                                <span class="descr">2.0x</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-sm-6">
-                                <div class="single-result">
-                                    <div class="part-top">
-                                        <div class="user-img">
-                                            <img src="assetsM/img/games/assetsM-4.jpg" alt="">
-                                        </div>
-                                        <div class="part-info">
-                                            <span class="name">Jordan Smell</span>
-                                            <span class="bet-id">Bet ID : 32,156,52</span>
-                                            <span class="game">Slots 375</span>
-                                        </div>
-                                    </div>
-                                    <div class="part-bottom">
-                                        <ul>
-                                            <li>
-                                                <span class="title">Coin:</span>
-                                                <span class="descr">BTC</span>
-                                            </li>
-                                            <li>
-                                                <span class="title">Bet:</span>
-                                                <span class="descr">0.1500</span>
-                                            </li>
-                                            <li>
-                                                <span class="title">Win:</span>
-                                                <span class="descr">0.1750</span>
-                                            </li>
-                                            <li>
-                                                <span class="title">Profit</span>
-                                                <span class="descr">0.0250</span>
-                                            </li>
-                                            <li>
-                                                <span class="title">Payout</span>
-                                                <span class="descr">2.0x</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-sm-6">
-                                <div class="single-result">
-                                    <div class="part-top">
-                                        <div class="user-img">
-                                            <img src="assetsM/img/games/assetsM-5.jpg" alt="">
-                                        </div>
-                                        <div class="part-info">
-                                            <span class="name">Jonathan Djerby</span>
-                                            <span class="bet-id">Bet ID : 32,156,52</span>
-                                            <span class="game">Poker Club</span>
-                                        </div>
-                                    </div>
-                                    <div class="part-bottom">
-                                        <ul>
-                                            <li>
-                                                <span class="title">Coin:</span>
-                                                <span class="descr">BTC</span>
-                                            </li>
-                                            <li>
-                                                <span class="title">Bet:</span>
-                                                <span class="descr">0.1500</span>
-                                            </li>
-                                            <li>
-                                                <span class="title">Win:</span>
-                                                <span class="descr">0.1750</span>
-                                            </li>
-                                            <li>
-                                                <span class="title">Profit</span>
-                                                <span class="descr">0.0250</span>
-                                            </li>
-                                            <li>
-                                                <span class="title">Payout</span>
-                                                <span class="descr">2.0x</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-sm-6">
-                                <div class="single-result">
-                                    <div class="part-top">
-                                        <div class="user-img">
-                                            <img src="assetsM/img/games/assetsM-6.jpg" alt="">
-                                        </div>
-                                        <div class="part-info">
-                                            <span class="name">Nilidiano Junior</span>
-                                            <span class="bet-id">Bet ID : 32,156,52</span>
-                                            <span class="game">Poker Club</span>
-                                        </div>
-                                    </div>
-                                    <div class="part-bottom">
-                                        <ul>
-                                            <li>
-                                                <span class="title">Coin:</span>
-                                                <span class="descr">BTC</span>
-                                            </li>
-                                            <li>
-                                                <span class="title">Bet:</span>
-                                                <span class="descr">0.1500</span>
-                                            </li>
-                                            <li>
-                                                <span class="title">Win:</span>
-                                                <span class="descr">0.1750</span>
-                                            </li>
-                                            <li>
-                                                <span class="title">Profit</span>
-                                                <span class="descr">0.0250</span>
-                                            </li>
-                                            <li>
-                                                <span class="title">Payout</span>
-                                                <span class="descr">2.0x</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <div class="table-cover">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Coin</th>
-                                        <th scope="col">User Name</th>
-                                        <th scope="col">Predict</th>
-                                        <th scope="col">Payout</th>
-                                        <th scope="col">Profit</th>
-                                        <th scope="col">Reward</th>
-                                        <th scope="col">Account ID</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">
-                                            <img src="assetsM/img/coin/coin-1.png" alt="">
-                                        </th>
-                                        <td>Tanun07</td>
-                                        <td>12.245.0</td>
-                                        <td>252.5</td>
-                                        <td class="profit">5112.5</td>
-                                        <td>001.52.80</td>
-                                        <td>ID250001</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            <img src="assetsM/img/coin/coin-2.png" alt="">
-                                        </th>
-                                        <td>Tanun07</td>
-                                        <td>12.245.0</td>
-                                        <td>252.5</td>
-                                        <td class="profit">5112.5</td>
-                                        <td>001.52.80</td>
-                                        <td>ID250001</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            <img src="assetsM/img/coin/coin-3.png" alt="">
-                                        </th>
-                                        <td>Tanun07</td>
-                                        <td>12.245.0</td>
-                                        <td>252.5</td>
-                                        <td class="profit">5112.5</td>
-                                        <td>001.52.80</td>
-                                        <td>ID250001</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            <img src="assetsM/img/coin/coin-4.png" alt="">
-                                        </th>
-                                        <td>Tanun07</td>
-                                        <td>12.245.0</td>
-                                        <td>252.5</td>
-                                        <td class="profit">5112.5</td>
-                                        <td>001.52.80</td>
-                                        <td>ID250001</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            <img src="assetsM/img/coin/coin-5.png" alt="">
-                                        </th>
-                                        <td>Tanun07</td>
-                                        <td>12.245.0</td>
-                                        <td>252.5</td>
-                                        <td class="profit">5112.5</td>
-                                        <td>001.52.80</td>
-                                        <td>ID250001</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            <img src="assetsM/img/coin/coin-1.png" alt="">
-                                        </th>
-                                        <td>Tanun07</td>
-                                        <td>12.245.0</td>
-                                        <td>252.5</td>
-                                        <td class="profit">5112.5</td>
-                                        <td>001.52.80</td>
-                                        <td>ID250001</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            <img src="assetsM/img/coin/coin-2.png" alt="">
-                                        </th>
-                                        <td>Tanun07</td>
-                                        <td>12.245.0</td>
-                                        <td>252.5</td>
-                                        <td class="profit">5112.5</td>
-                                        <td>001.52.80</td>
-                                        <td>ID250001</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <div class="view-more-btn text-center">
-                            <a href="#0" class="def-btn">Refresh Data<span class="icon-10"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- latest summery end -->
-
-    <!-- partner begin -->
-    <div class="partner">
-        <div class="container">
-            <div
-                class="row justify-content-xl-between justify-content-lg-between justify-content-sm-center justify-content-md-start">
-                <div class="col-xl-5 col-lg-6 col-md-9 col-sm-10 d-xl-flex d-lg-flex d-block align-items-center">
-                    <div class="part-text">
-                        <h2 class="title">Partnered with Misco</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia minima animi fugit qui,
-                            tenetur laudantium a sint at aliquam.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi fugit qui, tenetur laudantium
-                            a sint at aliquam mollitia.</p>
-                        <a href="#0" class="def-btn">Join WIth Us</a>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-10">
-                    <div class="part-partner-logo">
-                        <div class="row no-gutters">
-                            <div class="col-xl-4 col-lg-4 col-sm-6 col-md-4">
-                                <div class="single-logo">
-                                    <a href="#0">
-                                        <img src="assetsM/img/partner/sponsor-1.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-4 col-lg-4 col-sm-6 col-md-4">
-                                <div class="single-logo">
-                                    <a href="#0">
-                                        <img src="assetsM/img/partner/sponsor-2.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-4 col-lg-4 col-sm-6 col-md-4">
-                                <div class="single-logo">
-                                    <a href="#0">
-                                        <img src="assetsM/img/partner/sponsor-3.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-4 col-lg-4 col-sm-6 col-md-4">
-                                <div class="single-logo">
-                                    <a href="#0">
-                                        <img src="assetsM/img/partner/sponsor-5.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-4 col-lg-4 col-sm-6 col-md-4">
-                                <div class="single-logo">
-                                    <a href="#0">
-                                        <img src="assetsM/img/partner/sponsor-4.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-4 col-lg-4 col-sm-6 col-md-4">
-                                <div class="single-logo">
-                                    <a href="#0">
-                                        <img src="assetsM/img/partner/sponsor-6.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- partner end -->
-
-    <!-- blog begin -->
-    <div class="news" id="blog">
-        <div class="container news-container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-7 col-sm-10">
-                    <div class="section-title style-2">
-                        <h2>Misco Latest News</h2>
-                        <p>Misco has thousands of free online games for all generation. Play action, racing, sports, and
-                            other fun games for free at Misco</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-sm-center justify-content-md-start">
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10">
-                    <div class="single-news">
-                        <div class="part-img">
-                            <img src="assetsM/img/news/news-1.jpg" alt="">
-                        </div>
-                        <div class="part-text">
-                            <h3 class="title">Horizon: 0 Dawn system requirements are here</h3>
+            <div class="f-items default-padding">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 item">
+                        <div class="f-item about">
+                            <img src="assetsNew/img/logo-light.png" alt="Logo">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing eitse
-                                labore et dolore magna aliqua. Ut enim ad minim veniam
-                                laboris nisi ut aliquip exea commodo.
+                                Excellence decisively nay man yet impression for contrasted remarkably. There spoke
+                                happy for you are out. Fertile how old address did showing because sitting replied new.
                             </p>
-                            <a href="#0" class="def-btn def-small">
-                                Read More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10">
-                    <div class="single-news">
-                        <div class="part-img">
-                            <img src="assetsM/img/news/news-3.jpg" alt="">
-                        </div>
-                        <div class="part-text">
-                            <h3 class="title">A new mod adds the classic blocky sword into Witcher</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing eitse
-                                labore et dolore magna aliqua. Ut enim ad minim veniam
-                                laboris nisi ut aliquip exea commodo.
-                            </p>
-                            <a href="#0" class="def-btn def-small">
-                                Read More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10">
-                    <div class="single-news">
-                        <div class="part-img">
-                            <img src="assetsM/img/news/news-2.jpg" alt="">
-                        </div>
-                        <div class="part-text">
-                            <h3 class="title">Marvel's Spider-Man: Game of the Year Edition Game </h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing eitse
-                                labore et dolore magna aliqua. Ut enim ad minim veniam
-                                laboris nisi ut aliquip exea commodo.
-                            </p>
-                            <a href="#0" class="def-btn def-small">
-                                Read More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- blog end -->
-
-    <!-- payment gateways begin -->
-    <div class="payment-gateway" id="payment">
-        <div class="container">
-            <div class="row justify-content-xl-between justify-content-lg-around justify-content-sm-center">
-                <div
-                    class="col-xl-4 col-lg-4 col-sm-10 col-md-4 offset-xl-1 offset-lg-0 order-xl-0 order-lg-0 order-1">
-                    <div class="all-gateways">
-                        <img src="assetsM/img/crypto-currency.png" alt="">
-                    </div>
-                </div>
-                <div
-                    class="col-xl-6 col-lg-7 col-sm-10 col-md-7 d-xl-flex d-lg-flex d-sm-block d-md-block d-block align-items-center order-xl-2 order-lg-2 order-0">
-                    <div class="part-text">
-                        <h2 class="title">Wanna pay with Crytocurrency</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem placeat, iure possimus
-                            provident dicta dolorum? Rem velit eius ipsam eligendi recusandae! Tempore magnam
-                            exercitationem recusandae alias consectetur ipsa quibusdam veniam?</p>
-                        <a href="#0" class="def-btn">Pay Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- payment gateways end -->
-
-    <!-- testimonial begin -->
-    <div class="testimonial" id="testimonial">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-7 col-sm-10">
-                    <div class="section-title style-2">
-                        <h2>Feedback to Misco</h2>
-                        <p>Misco has thousands of free online games for all generation. Play action, racing, sports, and
-                            other fun games for free at Misco</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-xl-8 col-lg-8 col-sm-10">
-                    <div class="testimonial-slider owl-carousel owl-theme">
-                        <div class="single-testimonial">
-                            <div class="part-img">
-                                <img src="assetsM/img/testimonial/comment-user-1.jpg" alt="">
-                            </div>
-                            <div class="part-text">
-                                <i class="icon-for-quot fas fa-quote-left"></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nesciunt dignissimos
-                                    laborum praesentium illo dolorem, fuga commodi? Laudantium totam porro quod nihil
-                                    eius!</p>
-                                <span class="position">
-                                    Player
-                                </span>
-                                <span class="user-name">
-                                    Illustino Calibia
-                                </span>
-                            </div>
-                        </div>
-                        <div class="single-testimonial">
-                            <div class="part-img">
-                                <img src="assetsM/img/testimonial/comment-user-2.jpg" alt="">
-                            </div>
-                            <div class="part-text">
-                                <i class="icon-for-quot fas fa-quote-left"></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nesciunt dignissimos
-                                    laborum praesentium illo dolorem, fuga commodi? Laudantium totam porro quod nihil
-                                    eius!</p>
-                                <span class="position">
-                                    Player
-                                </span>
-                                <span class="user-name">
-                                    Illustino Calibia
-                                </span>
-                            </div>
-                        </div>
-                        <div class="single-testimonial">
-                            <div class="part-img">
-                                <img src="assetsM/img/testimonial/comment-user-3.jpg" alt="">
-                            </div>
-                            <div class="part-text">
-                                <i class="icon-for-quot fas fa-quote-left"></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nesciunt dignissimos
-                                    laborum praesentium illo dolorem, fuga commodi? Laudantium totam porro quod nihil
-                                    eius!</p>
-                                <span class="position">
-                                    Player
-                                </span>
-                                <span class="user-name">
-                                    Illustino Calibia
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- testimonial end -->
-
-    <!-- contact begin -->
-    <div class="contact" id="contact">
-        <div class="container container-contact">
-            <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-7 col-sm-10">
-                    <div class="section-title">
-                        <h2>Get in touch with us</h2>
-                        <p>Misco has thousands of free online games for all generation. Play action, racing, sports, and
-                            other fun games for free at Misco</p>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-tamim">
-                <div class="row justify-content-around">
-                    <div class="col-xl-6 col-lg-6 col-sm-10 col-md-6">
-                        <div class="part-form">
-                            <form>
-                                <input type="text" placeholder="Players Name">
-                                <input type="text" placeholder="Players Email">
-                                <textarea placeholder="Write to Us..."></textarea>
-                                <button class="submit-btn def-btn" type="submit">Submit</button>
+                            <form action="#">
+                                <input type="email" placeholder="Your Email" class="form-control" name="email">
+                                <button type="submit"> Get Started</button>
                             </form>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-sm-10 col-md-6">
-                        <div class="part-address">
-                            <div class="addressing">
-                                <div class="single-address">
-                                    <h4>Our Office</h4>
-                                    <p>1941 Romines Mill Road
-                                        Irving, TX 75062<br>Texas, United States</p>
-                                </div>
-                                <div class="single-address">
-                                    <h4>Email</h4>
-                                    <p>DanielleHButeau@teleworm.us<br>
-                                        CharlesTPride@armyspy.com</p>
-                                </div>
-                                <div class="single-address">
-                                    <h4>Phone</h4>
-                                    <p>+1 318-342-7639<br>
-                                        +1 530-259-4087</p>
-                                </div>
-                            </div>
+                    <div class="col-lg-2 col-md-6 item">
+                        <div class="f-item link">
+                            <h4 class="widget-title">Quick LInk</h4>
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fas fa-angle-right"></i> Home</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-angle-right"></i> About us</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-angle-right"></i> Compnay History</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-angle-right"></i> Features</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-angle-right"></i> Blog Page</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- contact end -->
-
-    <!-- footer begin -->
-    <div class="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-4 col-lg-4 col-sm-10">
-                        <div class="about-widget">
-                            <a href="index.html" class="logo">
-                                <img src="assetsM/img/logo.png" alt="">
-                            </a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi ut illum.
-                                Cumque, unde suscipit error!</p>
-                            <div class="social-links">
+                    <div class="col-lg-3 col-md-6 item">
+                        <div class="f-item link">
+                            <h4 class="widget-title">Community</h4>
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fas fa-angle-right"></i> Career</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-angle-right"></i> Leadership</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-angle-right"></i> Strategy</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-angle-right"></i> Services</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-angle-right"></i> History</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 item">
+                        <div class="f-item twitter-widget">
+                            <h4 class="widget-title">Contact Info</h4>
+                            <div class="address">
                                 <ul>
                                     <li>
-                                        <a href="#0" class="single-link">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
+                                        <div class="icon">
+                                            <i class="fas fa-home"></i>
+                                        </div>
+                                        <div class="content">
+                                            <strong>Address:</strong>
+                                            5919 Trussville Crossings Pkwy, Birmingham AL 35235
+                                        </div>
                                     </li>
                                     <li>
-                                        <a href="#0" class="single-link">
-                                            <i class="fab fa-twitter"></i>
-                                        </a>
+                                        <div class="icon">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <div class="content">
+                                            <strong>Email:</strong>
+                                            <a href="mailto:info@validtheme.com">info@validtheme.com</a>
+                                        </div>
                                     </li>
                                     <li>
-                                        <a href="#0" class="single-link">
-                                            <i class="fab fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#0" class="single-link">
-                                            <i class="fab fa-pinterest-p"></i>
-                                        </a>
+                                        <div class="icon">
+                                            <i class="fas fa-phone"></i>
+                                        </div>
+                                        <div class="content">
+                                            <strong>Phone:</strong>
+                                            <a href="tel:2151234567">+123 34598768</a>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-2 col-sm-10">
-                        <div class="link-widget">
-                            <h4 class="title">
-                                Play Games
-                            </h4>
-                            <ul>
-                                <li>
-                                    <a href="#0" class="single-link">
-                                        Action Games
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#0" class="single-link">
-                                        Intellectual
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#0" class="single-link">
-                                        Online Casino
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#0" class="single-link">
-                                        Lottery Draw
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#0" class="single-link">
-                                        Chess Master
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-sm-10">
-                        <div class="newsletter-widget">
-                            <h4 class="title">
-                                Subscribe To Our Newsletter
-                            </h4>
-                            <form class="newsletter-form">
-                                <input type="text" placeholder="Enter Your Mail Address">
-                                <button class="def-btn def-small">
-                                    Subscribe
-                                </button>
-                            </form>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi accusamus labore
-                                recusandae! Quia sint consectetur explicabo.</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
-        <div class="copyright-area">
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-8 col-lg-8">
-                        <p>Copyright © <a href="index.html">The Misco</a> - 2023. All Rights Reserved</p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>&copy; Copyright 2020. All Rights Reserved by <a href="#">validthemes</a></p>
+                    </div>
+                    <div class="col-lg-6 text-right link">
+                        <ul>
+                            <li>
+                                <a href="#">Terms</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy</a>
+                            </li>
+                            <li>
+                                <a href="#">Support</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- footer end -->
+        <!-- End Footer Bottom -->
+    </footer>
+    <!-- End Footer -->
 
-    <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <!-- bootstrap -->
-    <script src="assetsM/js/bootstrap.min.js"></script>
-    <!-- owl carousel -->
-    <script src="assetsM/js/owl.carousel.min.js"></script>
-    <!-- magnific popup -->
-    <script src="assetsM/js/jquery-modal-video.min.js"></script>
-    <!-- wow js-->
-    <script src="assetsM/js/wow.min.js"></script>
-    <!-- main -->
-    <script src="assetsM/js/main.js"></script>
+    <!-- jQuery Frameworks
+    ============================================= -->
+    <script src="assetsNew/js/jquery-1.12.4.min.js"></script>
+    <script src="assetsNew/js/popper.min.js"></script>
+    <script src="assetsNew/js/bootstrap.min.js"></script>
+    <script src="assetsNew/js/jquery.appear.js"></script>
+    <script src="assetsNew/js/jquery.easing.min.js"></script>
+    <script src="assetsNew/js/jquery.magnific-popup.min.js"></script>
+    <script src="assetsNew/js/modernizr.custom.13711.js"></script>
+    <script src="assetsNew/js/owl.carousel.min.js"></script>
+    <script src="assetsNew/js/wow.min.js"></script>
+    <script src="assetsNew/js/progress-bar.min.js"></script>
+    <script src="assetsNew/js/isotope.pkgd.min.js"></script>
+    <script src="assetsNew/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assetsNew/js/count-to.js"></script>
+    <script src="assetsNew/js/YTPlayer.min.js"></script>
+    <script src="assetsNew/js/bootsnav.js"></script>
+    <script src="assetsNew/js/main.js"></script>
+
 </body>
 
 </html>
