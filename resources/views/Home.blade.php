@@ -200,7 +200,7 @@
                         <div class="banner-txt">
                             <h4>Miscoo is a long profeting</h4>
                             <h1>play free Crypto game in your browser</h1>
-                            <a href="#0" class="def-btn">play now</a>
+                            <a href="#0" class="def-btn">ASDASDA</a>
                         </div>
                     </div>
                 </div>
@@ -213,7 +213,7 @@
                         <div class="banner-txt">
                             <h4>Miscoo is a long profeting</h4>
                             <h1> Dogecoin gives away the crypto games</h1>
-                            <a href="#0" class="def-btn">play now</a>
+                            <a href="#0" class="def-btn">ASDASDA</a>
                         </div>
                     </div>
                 </div>
@@ -226,7 +226,7 @@
                         <div class="banner-txt">
                             <h4>Miscoo is a long profeting</h4>
                             <h1>All Games is a blockchain integrated</h1>
-                            <a href="#0" class="def-btn">play now</a>
+                            <a href="#0" class="def-btn">ASDASDA</a>
                         </div>
                     </div>
                 </div>
@@ -332,7 +332,8 @@
                         <p>Lorem ipsum dolor sit, amet consectetur adipis icing elit. Distinctio architecto nobis totam
                             odio aliquam repellat quam rem harum alias animi ducimus quibusdam, sint placeat
                             <span>"omnis dolores odit ipsum ut autem! quam rem harum alias animi ducimus quibusdam, sint
-                                placeat omnis dolores odit ipsum ut autem!"</span></p>
+                                placeat omnis dolores odit ipsum ut autem!"</span>
+                        </p>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 d-xl-block d-lg-block d-md-none">
@@ -670,7 +671,8 @@
                                         </div>
                                         <div class="part-text">
                                             <p><span class="player-name">Mukta</span> won 2 minutes ago<br> on game of
-                                                <a href="#0" class="game-name">Mega Matrix</a></p>
+                                                <a href="#0" class="game-name">Mega Matrix</a>
+                                            </p>
                                             <span class="winning-amount">$42.02</span>
                                         </div>
                                     </div>
@@ -694,7 +696,8 @@
                                         </div>
                                         <div class="part-text">
                                             <p><span class="player-name">Maria</span> won 2 minutes ago<br> on game of
-                                                <a href="#0" class="game-name">Poker Club</a></p>
+                                                <a href="#0" class="game-name">Poker Club</a>
+                                            </p>
                                             <span class="winning-amount">$21.41</span>
                                         </div>
                                     </div>
@@ -706,7 +709,8 @@
                                         </div>
                                         <div class="part-text">
                                             <p><span class="player-name">Drubo</span> won 2 minutes ago<br> on game of
-                                                <a href="#0" class="game-name">Slots 375</a></p>
+                                                <a href="#0" class="game-name">Slots 375</a>
+                                            </p>
                                             <span class="winning-amount">$10.50</span>
                                         </div>
                                     </div>
@@ -800,7 +804,8 @@
                                         </div>
                                         <div class="part-text">
                                             <p><span class="player-name">Mukta</span> won 2 minutes ago<br> on game of
-                                                <a href="#0" class="game-name">Mega Matrix</a></p>
+                                                <a href="#0" class="game-name">Mega Matrix</a>
+                                            </p>
                                             <span class="winning-amount">$3,500.20</span>
                                         </div>
                                     </div>
@@ -812,7 +817,8 @@
                                         </div>
                                         <div class="part-text">
                                             <p><span class="player-name">Mukta</span> won 2 minutes ago<br> on game of
-                                                <a href="#0" class="game-name">Mega Matrix</a></p>
+                                                <a href="#0" class="game-name">Mega Matrix</a>
+                                            </p>
                                             <span class="winning-amount">$2,100.41</span>
                                         </div>
                                     </div>
@@ -824,7 +830,8 @@
                                         </div>
                                         <div class="part-text">
                                             <p><span class="player-name">Mukta</span> won 2 minutes ago<br> on game of
-                                                <a href="#0" class="game-name">Mega Matrix</a></p>
+                                                <a href="#0" class="game-name">Mega Matrix</a>
+                                            </p>
                                             <span class="winning-amount">$1,000.50</span>
                                         </div>
                                     </div>
